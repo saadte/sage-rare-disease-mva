@@ -1,0 +1,56 @@
+# Genomic data and files derived from it
+*.vcf
+*.vcf.gz
+*.bcf
+*.tbi
+*.csi
+*.bam
+*.bai
+*.cram
+*.crai
+*.fastq.gz
+*.fq.gz
+*.tsv.gz
+*.docx
+
+# Run outputs
+work/
+runs/
+*.csv
+ranked.*.tsv
+manifest.*.json
+
+# Phenotype terms
+*terms*.txt
+
+# Credentials
+.env
+*token*
+
+# Public benchmark data is kept
+!benchmark/**
+
+# Selected submission findings and reviewed HPO codes
+!submission/nadia_mvapipe.csv
+!submission/hpo.txt
+
+# Tests and development tooling
+tests/
+.github/
+pyproject.toml
+.shellcheckrc
+scripts/fetch_challenge_vcf.sh
+
+# Held back until after the first submission
+benchmark/
+tools/
+scripts/
+CITATION.cff
+config/README.md
+submission/references.json
+
+# Caches
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/

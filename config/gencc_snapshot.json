@@ -1,0 +1,15 @@
+{
+  "source_url": "https://search.thegencc.org/download/action/submissions-export-tsv",
+  "retrieved_utc_date": "2026-10-13",
+  "source_bytes": 26539840,
+  "snapshot_file": "gencc-2026-10-13.tsv",
+  "snapshot_bytes": 1022463,
+  "rows": 30345,
+  "columns_retained": [
+    "gene_symbol",
+    "classification_title",
+    "moi_title"
+  ],
+  "transformation": "Retain every row and the three columns read by load_gene_validity.",
+  "licence": "CC0-1.0"
+}

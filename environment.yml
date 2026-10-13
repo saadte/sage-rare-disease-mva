@@ -1,0 +1,17 @@
+name: mvapipe
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - ensembl-vep=116.2
+  - bcftools=1.21
+  - htslib=1.21
+  - samtools=1.21
+  - aria2
+  - git
+  - s5cmd
+  - mypy=2.1.0
+  - pytest
+  - ruff=0.15.15
+  - shellcheck=0.11.0
