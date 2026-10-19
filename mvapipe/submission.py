@@ -35,18 +35,22 @@ class Validation:
 
 
 def submission_chromosome(chromosome: str) -> str:
-    """Use the challenge's chromosome names: chr1 through chr22, chrX, chrY, chrM."""
+    """Return the name with a 'chr' prefix, using 'chrM' for M and MT."""
     name = chromosome.removeprefix("chr")
     return "chrM" if name in ("MT", "M") else f"chr{name}"
 
 
 def rows_of_candidates(
-    candidates: Sequence[Candidate], *, proband_id: str, minimum_relative_score: float
+    candidates: Sequence[Candidate], *, proband_id: str, minimum_score: float
 ) -> list[Row]:
-    """Write up to ten candidates meeting the score cutoff, including the best."""
+    """Return up to ten rows from candidates ordered by decreasing score.
+
+    Keep the first candidate even below minimum_score. Include later
+    candidates while their scores meet the threshold, up to the row limit.
+    """
     rows: list[Row] = []
     for candidate in candidates[:MAX_ROWS]:
-        if rows and candidate.score < minimum_relative_score * candidates[0].score:
+        if rows and candidate.score < minimum_score:
             break
         hypothesis = candidate.hypothesis
         row = dict.fromkeys(COLUMNS, "")
@@ -64,6 +68,7 @@ def rows_of_candidates(
 
 
 def write_predictions(rows: Sequence[Row], predictions_path: Path) -> None:
+    """Write the Track 1 header and rows as UTF-8 CSV without a byte-order mark."""
     with predictions_path.open("w", encoding="utf-8", newline="") as predictions:
         writer = csv.DictWriter(predictions, fieldnames=COLUMNS, lineterminator="\n")
         writer.writeheader()
@@ -188,6 +193,7 @@ def _read_rows(text: str, errors: list[str]) -> list[Row]:
 
 
 def validate(predictions_path: Path, *, proband_id: str) -> Validation:
+    """Check CSV structure and row values; return errors and warnings."""
     validation = Validation()
     errors = validation.errors
     content = predictions_path.read_bytes()
