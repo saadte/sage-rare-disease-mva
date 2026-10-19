@@ -4,9 +4,10 @@ import json
 import os
 from collections.abc import Callable, Sequence
 from datetime import UTC, datetime
+from fractions import Fraction
 from pathlib import Path
 
-from mvapipe import __version__, submission
+from mvapipe import __version__, conformal, submission
 from mvapipe.gene_validity import load_gene_validity
 from mvapipe.ontology import Phenotype_model, read_term_file
 from mvapipe.ranked_table import write_ranked_table
@@ -33,6 +34,8 @@ class _Arguments(argparse.Namespace):
     label: str | None
     threads: int
     min_relative_score: float
+    calibration_scores: Path | None
+    coverage: Fraction
     predictions: Path
 
 
@@ -52,32 +55,60 @@ def _score_fraction(value: str) -> float:
     return number
 
 
+def _coverage(value: str) -> Fraction:
+    number = Fraction(value)
+    if not 0 < number < 1:
+        message = "must be between 0 and 1, exclusive"
+        raise argparse.ArgumentTypeError(message)
+    return number
+
+
 def main(arguments: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="mvapipe")
     commands = parser.add_subparsers(required=True, metavar="COMMAND")
 
-    run = commands.add_parser("run", help="rank a sample's variants; write predictions")
+    run = commands.add_parser("run", help="rank variants and write Track 1 predictions")
     source = run.add_mutually_exclusive_group(required=True)
     source.add_argument("--vcf", type=Path)
-    source.add_argument("--table", type=Path, help="variants.tsv.gz of an earlier run")
+    source.add_argument("--table", type=Path, help="reuse variants.tsv.gz from a prior run")
     phenotype = run.add_mutually_exclusive_group(required=True)
-    phenotype.add_argument("--hpo", type=Path, help="file with one HPO id per line")
+    phenotype.add_argument("--hpo", type=Path, help="file with one HPO ID per line")
     phenotype.add_argument(
-        "--blind", action="store_true", help="rank without a phenotype"
+        "--blind", action="store_true", help="rank without HPO terms"
     )
-    run.add_argument("--out", type=Path, required=True, help="directory; a rerun resumes")
+    run.add_argument(
+        "--out",
+        type=Path,
+        required=True,
+        help="output directory; reuse it to resume a run",
+    )
     run.add_argument("--refs", type=Path, required=True)
-    run.add_argument("--sample", help="required when the VCF has several samples")
+    run.add_argument("--sample", help="sample name; required for a VCF with several samples")
     run.add_argument("--proband-id", default="PROBAND01")
     run.add_argument(
-        "--label", help="name of the output files (default: phenotype, blind)"
+        "--label", help="output label (default: phenotype with --hpo, blind with --blind)"
     )
     run.add_argument("--threads", type=_positive_integer, default=os.cpu_count())
-    run.add_argument(
+    cutoff = run.add_mutually_exclusive_group()
+    cutoff.add_argument(
         "--min-relative-score",
         type=_score_fraction,
         default=0.0,
-        help="after the best candidate, write only those scoring this fraction of it",
+        help="minimum fraction of the best score for additional rows (default: 0)",
+    )
+    cutoff.add_argument(
+        "--calibration-scores",
+        type=Path,
+        help="file with one true candidate score per benchmark case",
+    )
+    run.add_argument(
+        "--coverage",
+        type=_coverage,
+        default=Fraction("0.9"),
+        help=(
+            "target coverage with --calibration-scores, before the ten-row limit "
+            "(default: 0.9)"
+        ),
     )
     run.set_defaults(handler=_run)
 
@@ -91,6 +122,11 @@ def main(arguments: Sequence[str] | None = None) -> int:
 
 
 def _run(arguments: _Arguments) -> int:
+    calibration_scores = (
+        conformal.read_scores(arguments.calibration_scores)
+        if arguments.calibration_scores is not None
+        else None
+    )
     directory = arguments.out
     directory.mkdir(parents=True, exist_ok=True)
     references = References(arguments.refs)
@@ -120,10 +156,19 @@ def _run(arguments: _Arguments) -> int:
     label = arguments.label or ("blind" if arguments.blind else "phenotype")
     predictions_path = directory / f"{label}.csv"
     write_ranked_table(candidates[:RANKED_TABLE_ROWS], directory / f"ranked.{label}.tsv")
+    conformal_set = None
+    if calibration_scores is None:
+        best_score = candidates[0].score if candidates else 0.0
+        minimum_score = arguments.min_relative_score * best_score
+    else:
+        minimum_score = conformal.score_threshold(calibration_scores, arguments.coverage)
+        conformal_set = {
+            "coverage": float(arguments.coverage),
+            "calibration_cases": len(calibration_scores),
+            "score_threshold": minimum_score,
+        }
     rows = submission.rows_of_candidates(
-        candidates,
-        proband_id=arguments.proband_id,
-        minimum_relative_score=arguments.min_relative_score,
+        candidates, proband_id=arguments.proband_id, minimum_score=minimum_score
     )
     submission.write_predictions(rows, predictions_path)
     validation = submission.validate(predictions_path, proband_id=arguments.proband_id)
@@ -139,6 +184,7 @@ def _run(arguments: _Arguments) -> int:
         "candidates": len(candidates),
         "prediction_rows": len(rows),
         "minimum_relative_score": arguments.min_relative_score,
+        "conformal_set": conformal_set,
         "validation": dataclasses.asdict(validation),
         "scoring_config": dataclasses.asdict(config),
         "references": json.loads(references.manifest.read_text(encoding="utf8")),
