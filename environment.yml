@@ -4,6 +4,9 @@ channels:
   - bioconda
 dependencies:
   - python=3.11
+  - numpy=2.1.3
+  - scipy=1.14.1
+  - scikit-learn=1.5.2
   - ensembl-vep=116.2
   - bcftools=1.21
   - htslib=1.21

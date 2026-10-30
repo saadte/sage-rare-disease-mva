@@ -2,12 +2,12 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
-class Impact_weights:
+class ImpactWeights:
     loss_of_function: float = 0.95
     start_lost: float = 0.70
     stop_lost: float = 0.60
     inframe: float = 0.50
-    # missense = base + slope * AlphaMissense score
+    # Missense impact = base + slope * AlphaMissense score.
     missense_base: float = 0.15
     missense_slope: float = 0.65
     missense_without_score: float = 0.35
@@ -18,7 +18,7 @@ class Impact_weights:
 
 
 @dataclass(frozen=True)
-class Clinvar_weights:
+class ClinvarWeights:
     pathogenic_two_stars_floor: float = 1.00
     pathogenic_one_star_floor: float = 0.95
     pathogenic_no_stars_floor: float = 0.85
@@ -29,23 +29,30 @@ class Clinvar_weights:
 
 
 @dataclass(frozen=True)
-class Frequency_window:
-    """Rarity weight falls from 1 to 0 between the bounds on a log scale."""
+class FrequencyWindow:
+    """Frequency thresholds for reducing the rarity weight from 1 to 0.
 
-    full: float
-    zero: float
+    The weight falls linearly in log frequency between these thresholds.
+    """
+
+    full_weight_frequency: float
+    zero_weight_frequency: float
 
 
 @dataclass(frozen=True)
-class Rarity:
-    recessive: Frequency_window = Frequency_window(full=0.001, zero=0.02)
-    dominant: Frequency_window = Frequency_window(full=0.00001, zero=0.001)
+class RarityWeights:
+    recessive: FrequencyWindow = FrequencyWindow(
+        full_weight_frequency=0.001, zero_weight_frequency=0.02
+    )
+    dominant: FrequencyWindow = FrequencyWindow(
+        full_weight_frequency=0.00001, zero_weight_frequency=0.001
+    )
     # Applies to ClinVar pathogenic alleles with two or more review stars.
     recessive_exempt_below: float = 0.05
 
 
 @dataclass(frozen=True)
-class Call_quality:
+class CallQualityWeights:
     failed_filter_factor: float = 0.5
     minimum_genotype_quality: float = 20
     low_genotype_quality_factor: float = 0.5
@@ -57,7 +64,7 @@ class Call_quality:
 
 
 @dataclass(frozen=True)
-class Inheritance_weights:
+class InheritanceWeights:
     unknown_phase_factor: float = 0.90
     dominant_singleton_factor: float = 0.80
     dominant_minimum_impact: float = 0.15
@@ -68,7 +75,7 @@ class Inheritance_weights:
 
 
 @dataclass(frozen=True)
-class Gene_prior:
+class GenePriorWeights:
     definitive: float = 1.0
     strong: float = 1.0
     moderate: float = 0.9
@@ -82,11 +89,11 @@ class Gene_prior:
 
 
 @dataclass(frozen=True)
-class Scoring_config:
-    impact: Impact_weights = Impact_weights()
-    clinvar: Clinvar_weights = Clinvar_weights()
-    rarity: Rarity = Rarity()
-    quality: Call_quality = Call_quality()
-    inheritance: Inheritance_weights = Inheritance_weights()
-    gene_prior: Gene_prior = Gene_prior()
+class ScoringConfig:
+    impact: ImpactWeights = ImpactWeights()
+    clinvar: ClinvarWeights = ClinvarWeights()
+    rarity: RarityWeights = RarityWeights()
+    quality: CallQualityWeights = CallQualityWeights()
+    inheritance: InheritanceWeights = InheritanceWeights()
+    gene_prior: GenePriorWeights = GenePriorWeights()
     phenotype_floor: float = 0.30

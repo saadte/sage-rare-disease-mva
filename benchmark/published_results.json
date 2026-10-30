@@ -1,0 +1,457 @@
+{
+  "scope": "October 2026 evaluation results: fixed-background insertions with clean synthetic calls.",
+  "pair_endpoint": "Complete distinct compound-heterozygous genotype. Count arrays are top1, top3, top10; difference arrays are percentage-point difference, lower and upper gene-bootstrap limits.",
+  "pair_methods": {
+    "full": "Fitted method with full augmented-genome refitting",
+    "human": "Native Exomiser human-only preset",
+    "standard": "Native Exomiser standard preset"
+  },
+  "pairs": {
+    "HG001": {
+      "n": 276,
+      "genes": 159,
+      "methods": {
+        "full": [
+          230,
+          245,
+          258
+        ],
+        "human": [
+          169,
+          179,
+          185
+        ],
+        "standard": [
+          158,
+          177,
+          206
+        ]
+      },
+      "differences": {
+        "human": [
+          22.10144927536232,
+          14.440337875629226,
+          29.929577464788732
+        ],
+        "standard": [
+          26.08695652173913,
+          18.449456205088367,
+          33.941605839416056
+        ]
+      }
+    },
+    "HG002": {
+      "n": 275,
+      "genes": 159,
+      "methods": {
+        "full": [
+          230,
+          242,
+          253
+        ],
+        "human": [
+          143,
+          180,
+          189
+        ],
+        "standard": [
+          139,
+          161,
+          204
+        ]
+      },
+      "differences": {
+        "human": [
+          31.636363636363633,
+          23.529411764705884,
+          39.64927404718693
+        ],
+        "standard": [
+          33.09090909090909,
+          24.997837370242216,
+          41.28153352847581
+        ]
+      }
+    }
+  },
+  "extension_endpoint": "364 held-out extension cases on each background. Arrays are fitted top1, comparator top1, difference in percentage points, lower and upper gene-bootstrap limits. The dated condition uses the older reference release; the prespecified validation criterion failed.",
+  "extension": {
+    "HG001": {
+      "newer": [
+        311,
+        236,
+        20.6,
+        6.21,
+        35.7
+      ],
+      "dated": [
+        260,
+        236,
+        6.59,
+        -6.94,
+        20.27
+      ]
+    },
+    "HG002": {
+      "newer": [
+        322,
+        224,
+        26.92,
+        12.54,
+        43.38
+      ],
+      "dated": [
+        283,
+        224,
+        16.21,
+        4.84,
+        28.97
+      ]
+    }
+  },
+  "public_gene_endpoint": "Causal-gene ranking, 4491 public cases; this differs from the exact-genotype endpoint. First method is the fitted method; second is the named public comparator. Resampling groups cases by causal gene.",
+  "public_gene": {
+    "all_cases": {
+      "local": {
+        "ai_marrvel-0.1.0": {
+          "n": 4491,
+          "genes": 223,
+          "first_top1": 4268,
+          "second_top1": 1931,
+          "difference_pp": 52.0374081496326,
+          "interval_95_pp": [
+            46.21289572655155,
+            58.85196600607112
+          ],
+          "first_only": 2372,
+          "second_only": 35
+        },
+        "exomiser-14.0.2-2406": {
+          "n": 4491,
+          "genes": 223,
+          "first_top1": 4268,
+          "second_top1": 4097,
+          "difference_pp": 3.8076152304609217,
+          "interval_95_pp": [
+            1.1928370148814922,
+            6.366638717081395
+          ],
+          "first_only": 318,
+          "second_only": 147
+        },
+        "lirical-2.0.2-2309": {
+          "n": 4491,
+          "genes": 223,
+          "first_top1": 4268,
+          "second_top1": 3585,
+          "difference_pp": 15.208194166109998,
+          "interval_95_pp": [
+            5.083773907634893,
+            24.694443654215466
+          ],
+          "first_only": 871,
+          "second_only": 188
+        }
+      },
+      "causal_in_null": {
+        "ai_marrvel-0.1.0": {
+          "n": 4491,
+          "genes": 223,
+          "first_top1": 4231,
+          "second_top1": 1931,
+          "difference_pp": 51.21353818748608,
+          "interval_95_pp": [
+            45.421782009575004,
+            58.00140960582605
+          ],
+          "first_only": 2347,
+          "second_only": 47
+        },
+        "exomiser-14.0.2-2406": {
+          "n": 4491,
+          "genes": 223,
+          "first_top1": 4231,
+          "second_top1": 4097,
+          "difference_pp": 2.9837452683144066,
+          "interval_95_pp": [
+            0.1691487047714754,
+            5.574921721992544
+          ],
+          "first_only": 311,
+          "second_only": 177
+        },
+        "lirical-2.0.2-2309": {
+          "n": 4491,
+          "genes": 223,
+          "first_top1": 4231,
+          "second_top1": 3585,
+          "difference_pp": 14.384324203963482,
+          "interval_95_pp": [
+            4.113599048050081,
+            23.941857059168115
+          ],
+          "first_only": 868,
+          "second_only": 222
+        }
+      }
+    },
+    "exclude_known_overlap_and_all_six_source_ID_risks": {
+      "local": {
+        "ai_marrvel-0.1.0": {
+          "n": 4473,
+          "genes": 220,
+          "first_top1": 4252,
+          "second_top1": 1922,
+          "difference_pp": 52.0903196959535,
+          "interval_95_pp": [
+            46.258802242388384,
+            59.037623647112646
+          ],
+          "first_only": 2365,
+          "second_only": 35
+        },
+        "exomiser-14.0.2-2406": {
+          "n": 4473,
+          "genes": 220,
+          "first_top1": 4252,
+          "second_top1": 4082,
+          "difference_pp": 3.8005812653699977,
+          "interval_95_pp": [
+            1.207476685017994,
+            6.477990901520312
+          ],
+          "first_only": 316,
+          "second_only": 146
+        },
+        "lirical-2.0.2-2309": {
+          "n": 4473,
+          "genes": 220,
+          "first_top1": 4252,
+          "second_top1": 3572,
+          "difference_pp": 15.202325061479991,
+          "interval_95_pp": [
+            5.440573237177838,
+            24.710608031367904
+          ],
+          "first_only": 866,
+          "second_only": 186
+        }
+      },
+      "causal_in_null": {
+        "ai_marrvel-0.1.0": {
+          "n": 4473,
+          "genes": 220,
+          "first_top1": 4215,
+          "second_top1": 1922,
+          "difference_pp": 51.26313436172591,
+          "interval_95_pp": [
+            45.50849257924427,
+            58.09183266388816
+          ],
+          "first_only": 2340,
+          "second_only": 47
+        },
+        "exomiser-14.0.2-2406": {
+          "n": 4473,
+          "genes": 220,
+          "first_top1": 4215,
+          "second_top1": 4082,
+          "difference_pp": 2.97339593114241,
+          "interval_95_pp": [
+            0.1990528984786716,
+            5.64826905625302
+          ],
+          "first_only": 309,
+          "second_only": 176
+        },
+        "lirical-2.0.2-2309": {
+          "n": 4473,
+          "genes": 220,
+          "first_top1": 4215,
+          "second_top1": 3572,
+          "difference_pp": 14.375139727252403,
+          "interval_95_pp": [
+            4.408713529258664,
+            24.027349865640254
+          ],
+          "first_only": 863,
+          "second_only": 220
+        }
+      }
+    },
+    "complete_distinct_pair": {
+      "local": {
+        "ai_marrvel-0.1.0": {
+          "n": 346,
+          "genes": 70,
+          "first_top1": 330,
+          "second_top1": 88,
+          "difference_pp": 69.94219653179191,
+          "interval_95_pp": [
+            59.4871382636656,
+            79.22109041118625
+          ],
+          "first_only": 247,
+          "second_only": 5
+        },
+        "exomiser-14.0.2-2406": {
+          "n": 346,
+          "genes": 70,
+          "first_top1": 330,
+          "second_top1": 300,
+          "difference_pp": 8.670520231213873,
+          "interval_95_pp": [
+            0.5730249693000409,
+            18.551125902846618
+          ],
+          "first_only": 40,
+          "second_only": 10
+        },
+        "lirical-2.0.2-2309": {
+          "n": 346,
+          "genes": 70,
+          "first_top1": 330,
+          "second_top1": 328,
+          "difference_pp": 0.5780346820809249,
+          "interval_95_pp": [
+            -4.735706727252922,
+            6.089939024390241
+          ],
+          "first_only": 16,
+          "second_only": 14
+        }
+      },
+      "causal_in_null": {
+        "ai_marrvel-0.1.0": {
+          "n": 346,
+          "genes": 70,
+          "first_top1": 330,
+          "second_top1": 88,
+          "difference_pp": 69.94219653179191,
+          "interval_95_pp": [
+            59.4871382636656,
+            79.22109041118625
+          ],
+          "first_only": 247,
+          "second_only": 5
+        },
+        "exomiser-14.0.2-2406": {
+          "n": 346,
+          "genes": 70,
+          "first_top1": 330,
+          "second_top1": 300,
+          "difference_pp": 8.670520231213873,
+          "interval_95_pp": [
+            0.5730249693000409,
+            18.551125902846618
+          ],
+          "first_only": 40,
+          "second_only": 10
+        },
+        "lirical-2.0.2-2309": {
+          "n": 346,
+          "genes": 70,
+          "first_top1": 330,
+          "second_top1": 328,
+          "difference_pp": 0.5780346820809249,
+          "interval_95_pp": [
+            -4.735706727252922,
+            6.089939024390241
+          ],
+          "first_only": 16,
+          "second_only": 14
+        }
+      }
+    },
+    "complete_autosomal_without_known_overlap_or_missing_publications": {
+      "local": {
+        "ai_marrvel-0.1.0": {
+          "n": 4442,
+          "genes": 220,
+          "first_top1": 4236,
+          "second_top1": 1923,
+          "difference_pp": 52.07113912651958,
+          "interval_95_pp": [
+            46.19444312671305,
+            59.14648197871233
+          ],
+          "first_only": 2348,
+          "second_only": 35
+        },
+        "exomiser-14.0.2-2406": {
+          "n": 4442,
+          "genes": 220,
+          "first_top1": 4236,
+          "second_top1": 4054,
+          "difference_pp": 4.09725348941918,
+          "interval_95_pp": [
+            1.5233039473312424,
+            6.806964214902025
+          ],
+          "first_only": 314,
+          "second_only": 132
+        },
+        "lirical-2.0.2-2309": {
+          "n": 4442,
+          "genes": 220,
+          "first_top1": 4236,
+          "second_top1": 3542,
+          "difference_pp": 15.623592976136875,
+          "interval_95_pp": [
+            5.8629538412647975,
+            25.126558246796225
+          ],
+          "first_only": 865,
+          "second_only": 171
+        }
+      },
+      "causal_in_null": {
+        "ai_marrvel-0.1.0": {
+          "n": 4442,
+          "genes": 220,
+          "first_top1": 4199,
+          "second_top1": 1923,
+          "difference_pp": 51.238180999549755,
+          "interval_95_pp": [
+            45.43741404113202,
+            58.15677736602824
+          ],
+          "first_only": 2323,
+          "second_only": 47
+        },
+        "exomiser-14.0.2-2406": {
+          "n": 4442,
+          "genes": 220,
+          "first_top1": 4199,
+          "second_top1": 4054,
+          "difference_pp": 3.264295362449347,
+          "interval_95_pp": [
+            0.5293568857134356,
+            5.971953460123683
+          ],
+          "first_only": 307,
+          "second_only": 162
+        },
+        "lirical-2.0.2-2309": {
+          "n": 4442,
+          "genes": 220,
+          "first_top1": 4199,
+          "second_top1": 3542,
+          "difference_pp": 14.790634849167041,
+          "interval_95_pp": [
+            4.834234216995179,
+            24.403556304027177
+          ],
+          "first_only": 862,
+          "second_only": 205
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Few fixed backgrounds, not independent patient validation",
+    "Clean synthetic calls",
+    "Clinical probability calibration unestablished",
+    "Equal-gene weighting does not establish a positive public-gene advantage"
+  ]
+}

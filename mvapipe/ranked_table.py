@@ -32,6 +32,7 @@ VARIANT_COLUMNS = [
 
 
 def write_ranked_table(candidates: Sequence[Candidate], table_path: Path) -> None:
+    """Write one TSV row per candidate, ordering its variants by position."""
     header = CANDIDATE_COLUMNS + [
         f"v{number}_{column}" for number in (1, 2) for column in VARIANT_COLUMNS
     ]
@@ -55,17 +56,17 @@ def write_ranked_table(candidates: Sequence[Candidate], table_path: Path) -> Non
                 else phenotype.disease,
                 hypothesis.phase.value,
             ]
-            for evidence in sorted(hypothesis.variants, key=_position):
-                row += _variant_cells(evidence)
+            for evidence in sorted(hypothesis.evidence, key=_position_key):
+                row += _format_variant_cells(evidence)
             row += [""] * (len(header) - len(row))
             writer.writerow(row)
 
 
-def _position(evidence: Evidence) -> int:
+def _position_key(evidence: Evidence) -> int:
     return evidence.variant.allele.position
 
 
-def _variant_cells(evidence: Evidence) -> list[object]:
+def _format_variant_cells(evidence: Evidence) -> list[object]:
     variant = evidence.variant
     return [
         variant.allele.to_string(),
@@ -73,14 +74,14 @@ def _variant_cells(evidence: Evidence) -> list[object]:
         evidence.zygosity.value,
         variant.clinvar_significance,
         evidence.review_stars,
-        f"{variant.allele_frequency:.3g}",
-        _formatted(variant.alphamissense, ".3f"),
+        _format_optional(variant.allele_frequency, ".3g"),
+        _format_optional(variant.alphamissense, ".3f"),
         f"{evidence.impact:.2f}",
         variant.filter_status,
-        _formatted(variant.genotype_quality, "g"),
-        _formatted(variant.depth, "g"),
+        _format_optional(variant.genotype_quality, "g"),
+        _format_optional(variant.depth, "g"),
     ]
 
 
-def _formatted(number: float | None, specification: str) -> str:
+def _format_optional(number: float | None, specification: str) -> str:
     return "" if number is None else format(number, specification)

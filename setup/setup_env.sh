@@ -60,7 +60,7 @@ download_fasta() {
   local threads
   threads="$(nproc)"
   download "${FASTA_URL}" "${gzipped}"
-  # Ensembl compresses with gzip; bcftools and VEP read bgzip with an index.
+  # Recompress as bgzip so samtools can index the FASTA for random access.
   gzip -dc "${gzipped}" | in_environment bgzip -@ "${threads}" -c > "${fasta}"
   in_environment samtools faidx "${fasta}"
   rm "${gzipped}"
@@ -73,7 +73,7 @@ download_clinvar() {
 
 download_alphamissense() {
   download "${ALPHAMISSENSE_URL}" "${REFS}/alphamissense/AlphaMissense_hg38.tsv.gz"
-  # Chromosome in column 1, position in column 2, one header line.
+  # Index chromosome column 1 and position column 2, skipping the single header line.
   in_environment tabix -s 1 -b 2 -e 2 -S 1 "${REFS}/alphamissense/AlphaMissense_hg38.tsv.gz"
 }
 
@@ -87,8 +87,25 @@ install_gencc() {
   cp "${REPOSITORY}/config/gencc-2026-10-13.tsv" "${REFS}/gencc/gencc-submissions.tsv"
 }
 
-write_manifest() {
-  in_environment python -m setup.reference_manifest --refs "${REFS}"
+install_gene_folds() {
+  mkdir -p "${REFS}/phenopackets"
+  cp "${REPOSITORY}/config/gene_folds.tsv" "${REFS}/phenopackets/gene_folds.tsv"
+}
+
+download_phenotype_annotations() {
+  download "${HPO_URL}/phenotype.hpoa" "${REFS}/hpo/phenotype.hpoa"
+}
+
+download_phenopackets() {
+  download "${PHENOPACKETS_URL}" "${REFS}/phenopackets/all_phenopackets.zip"
+}
+
+download_gene_constraint() {
+  download "${GNOMAD_CONSTRAINT_URL}" "${REFS}/gnomad/gnomad.v4.1.constraint_metrics.tsv"
+}
+
+prepare_training() {
+  in_environment python -m mvapipe prepare-training --refs "${REFS}"
 }
 
 step install_micromamba
@@ -100,4 +117,8 @@ step download_clinvar
 step download_alphamissense
 step download_hpo
 step install_gencc
-step write_manifest
+step download_phenotype_annotations
+step download_phenopackets
+step download_gene_constraint
+step install_gene_folds
+step prepare_training

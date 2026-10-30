@@ -1,0 +1,5156 @@
+[
+ {
+  "case": "comphet_LPIN1",
+  "type": "comphet",
+  "gene": "LPIN1",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 11782269,
+    "id": "2444342",
+    "ref": "CT",
+    "alt": "C",
+    "gene": "LPIN1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:268200",
+     "ORPHA:99845"
+    ]
+   },
+   {
+    "chrom": "2",
+    "pos": 11783834,
+    "id": "4911",
+    "ref": "C",
+    "alt": "T",
+    "gene": "LPIN1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:268200",
+     "ORPHA:99845"
+    ]
+   }
+  ],
+  "disease": "ORPHA:99845",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0045037",
+   "HP:0008997",
+   "HP:0001324",
+   "HP:0005521",
+   "HP:0001288"
+  ],
+  "noisy": [
+   "HP:0000301",
+   "HP:0003701",
+   "HP:0001324",
+   "HP:0001977",
+   "HP:0100022",
+   "HP:0000739"
+  ]
+ },
+ {
+  "case": "hom_LPIN1",
+  "type": "hom",
+  "gene": "LPIN1",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 11783840,
+    "id": "1050803",
+    "ref": "C",
+    "alt": "T",
+    "gene": "LPIN1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:268200",
+     "ORPHA:99845"
+    ]
+   }
+  ],
+  "disease": "ORPHA:99845",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003394",
+   "HP:0001315",
+   "HP:0001945",
+   "HP:0011675",
+   "HP:0030234"
+  ],
+  "noisy": [
+   "HP:0003394",
+   "HP:0001315",
+   "HP:0004370",
+   "HP:0030956",
+   "HP:0003236",
+   "HP:0000546",
+   "HP:0000320"
+  ]
+ },
+ {
+  "case": "comphet_ABCD4",
+  "type": "comphet",
+  "gene": "ABCD4",
+  "variants": [
+   {
+    "chrom": "14",
+    "pos": 74290323,
+    "id": "1698540",
+    "ref": "C",
+    "alt": "T",
+    "gene": "ABCD4",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:277400",
+     "OMIM:614857",
+     "ORPHA:26",
+     "ORPHA:369955",
+     "ORPHA:79282"
+    ]
+   },
+   {
+    "chrom": "14",
+    "pos": 74287858,
+    "id": "583152",
+    "ref": "G",
+    "alt": "A",
+    "gene": "ABCD4",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:277400",
+     "OMIM:614857",
+     "ORPHA:26",
+     "ORPHA:369955",
+     "ORPHA:79282"
+    ]
+   }
+  ],
+  "disease": "OMIM:614857",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001591",
+   "HP:0001873",
+   "HP:0001510",
+   "HP:0001895",
+   "HP:0006610"
+  ],
+  "noisy": [
+   "HP:0001547",
+   "HP:0001873",
+   "HP:0001507",
+   "HP:0010972",
+   "HP:0040157",
+   "HP:0000989"
+  ]
+ },
+ {
+  "case": "hom_ABCD4",
+  "type": "hom",
+  "gene": "ABCD4",
+  "variants": [
+   {
+    "chrom": "14",
+    "pos": 74290492,
+    "id": "1335925",
+    "ref": "CT",
+    "alt": "C",
+    "gene": "ABCD4",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614857",
+     "ORPHA:369955"
+    ]
+   }
+  ],
+  "disease": "OMIM:614857",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001631",
+   "HP:0011968",
+   "HP:0000023",
+   "HP:0001643",
+   "HP:0002092"
+  ],
+  "noisy": [
+   "HP:0005120",
+   "HP:0011968",
+   "HP:0000023",
+   "HP:0001643",
+   "HP:0033578",
+   "HP:0003449",
+   "HP:0000093"
+  ]
+ },
+ {
+  "case": "comphet_ANTXR2",
+  "type": "comphet",
+  "gene": "ANTXR2",
+  "variants": [
+   {
+    "chrom": "4",
+    "pos": 79983971,
+    "id": "2445864",
+    "ref": "C",
+    "alt": "T",
+    "gene": "ANTXR2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:228600",
+     "ORPHA:2028",
+     "ORPHA:498474"
+    ]
+   },
+   {
+    "chrom": "4",
+    "pos": 79984831,
+    "id": "2604",
+    "ref": "A",
+    "alt": "AG",
+    "gene": "ANTXR2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:228600",
+     "ORPHA:2028",
+     "ORPHA:498474"
+    ]
+   }
+  ],
+  "disease": "OMIM:228600",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000939",
+   "HP:0002719",
+   "HP:0001482",
+   "HP:0001249",
+   "HP:0002014"
+  ],
+  "noisy": [
+   "HP:0004349",
+   "HP:0032101",
+   "HP:0001482",
+   "HP:0001249",
+   "HP:0002014",
+   "HP:0004828",
+   "HP:0003557"
+  ]
+ },
+ {
+  "case": "hom_ANTXR2",
+  "type": "hom",
+  "gene": "ANTXR2",
+  "variants": [
+   {
+    "chrom": "4",
+    "pos": 79984830,
+    "id": "419342",
+    "ref": "CA",
+    "alt": "C",
+    "gene": "ANTXR2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:228600",
+     "ORPHA:2028",
+     "ORPHA:498474"
+    ]
+   }
+  ],
+  "disease": "OMIM:228600",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002719",
+   "HP:0000938",
+   "HP:0005876",
+   "HP:0000280",
+   "HP:0001072"
+  ],
+  "noisy": [
+   "HP:0032101",
+   "HP:0000938",
+   "HP:0001371",
+   "HP:0001999",
+   "HP:0011121",
+   "HP:0000616",
+   "HP:0001250"
+  ]
+ },
+ {
+  "case": "comphet_AARS2",
+  "type": "comphet",
+  "gene": "AARS2",
+  "variants": [
+   {
+    "chrom": "6",
+    "pos": 44311095,
+    "id": "143044",
+    "ref": "G",
+    "alt": "GC",
+    "gene": "AARS2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614096",
+     "ORPHA:319504"
+    ]
+   },
+   {
+    "chrom": "6",
+    "pos": 44305072,
+    "id": "143046",
+    "ref": "G",
+    "alt": "A",
+    "gene": "AARS2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614096",
+     "OMIM:615889",
+     "ORPHA:319504",
+     "ORPHA:99853"
+    ]
+   }
+  ],
+  "disease": "OMIM:615889",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000709",
+   "HP:0002378",
+   "HP:0003688",
+   "HP:0002180",
+   "HP:0006970"
+  ],
+  "noisy": [
+   "HP:5200430",
+   "HP:0030188",
+   "HP:0003800",
+   "HP:0002180",
+   "HP:0006970",
+   "HP:0000204",
+   "HP:0003041"
+  ]
+ },
+ {
+  "case": "hom_AARS2",
+  "type": "hom",
+  "gene": "AARS2",
+  "variants": [
+   {
+    "chrom": "6",
+    "pos": 44302821,
+    "id": "427119",
+    "ref": "G",
+    "alt": "A",
+    "gene": "AARS2",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:614096",
+     "OMIM:615889",
+     "ORPHA:319504",
+     "ORPHA:99853"
+    ]
+   }
+  ],
+  "disease": "OMIM:614096",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002089",
+   "HP:0001265",
+   "HP:0003324",
+   "HP:0001640",
+   "HP:0001639"
+  ],
+  "noisy": [
+   "HP:0006703",
+   "HP:0001315",
+   "HP:0003324",
+   "HP:0001627",
+   "HP:0001638",
+   "HP:0006558",
+   "HP:0000639"
+  ]
+ },
+ {
+  "case": "comphet_ALG8",
+  "type": "comphet",
+  "gene": "ALG8",
+  "variants": [
+   {
+    "chrom": "11",
+    "pos": 78119184,
+    "id": "2683953",
+    "ref": "G",
+    "alt": "A",
+    "gene": "ALG8",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608104",
+     "OMIM:617874",
+     "ORPHA:79325"
+    ]
+   },
+   {
+    "chrom": "11",
+    "pos": 78139493,
+    "id": "1344961",
+    "ref": "C",
+    "alt": "T",
+    "gene": "ALG8",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608104",
+     "OMIM:617874",
+     "ORPHA:79325"
+    ]
+   }
+  ],
+  "disease": "OMIM:608104",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002013",
+   "HP:0003073",
+   "HP:0031507",
+   "HP:0001643",
+   "HP:0001762"
+  ],
+  "noisy": [
+   "HP:0002013",
+   "HP:0003073",
+   "HP:0031505",
+   "HP:0011603",
+   "HP:0001762",
+   "HP:0004552",
+   "HP:0009102"
+  ]
+ },
+ {
+  "case": "hom_ALG8",
+  "type": "hom",
+  "gene": "ALG8",
+  "variants": [
+   {
+    "chrom": "11",
+    "pos": 78113901,
+    "id": "854540",
+    "ref": "A",
+    "alt": "AC",
+    "gene": "ALG8",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608104",
+     "OMIM:617874",
+     "ORPHA:79325"
+    ]
+   }
+  ],
+  "disease": "ORPHA:79325",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001999",
+   "HP:0001001",
+   "HP:0011968",
+   "HP:0002013",
+   "HP:0002415"
+  ],
+  "noisy": [
+   "HP:0001999",
+   "HP:0001001",
+   "HP:0011968",
+   "HP:0002013",
+   "HP:0011400",
+   "HP:0000369"
+  ]
+ },
+ {
+  "case": "comphet_POR",
+  "type": "comphet",
+  "gene": "POR",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 75985056,
+    "id": "2822770",
+    "ref": "A",
+    "alt": "G",
+    "gene": "POR",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:201750",
+     "OMIM:613571",
+     "ORPHA:63269",
+     "ORPHA:95699"
+    ]
+   },
+   {
+    "chrom": "7",
+    "pos": 75985937,
+    "id": "1379019",
+    "ref": "G",
+    "alt": "GAGAC",
+    "gene": "POR",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:613571",
+     "ORPHA:418",
+     "ORPHA:95699"
+    ]
+   }
+  ],
+  "disease": "OMIM:201750",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003041",
+   "HP:0000252",
+   "HP:0000062",
+   "HP:0002650",
+   "HP:0000445"
+  ],
+  "noisy": [
+   "HP:0002818",
+   "HP:0000252",
+   "HP:0000062",
+   "HP:0002650",
+   "HP:0005105",
+   "HP:0001561",
+   "HP:0010864"
+  ]
+ },
+ {
+  "case": "hom_POR",
+  "type": "hom",
+  "gene": "POR",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 75985947,
+    "id": "3339945",
+    "ref": "T",
+    "alt": "C",
+    "gene": "POR",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:201750",
+     "OMIM:613571",
+     "ORPHA:418",
+     "ORPHA:63269",
+     "ORPHA:95699"
+    ]
+   }
+  ],
+  "disease": "OMIM:201750",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000138",
+   "HP:0001769",
+   "HP:0032569",
+   "HP:0008368",
+   "HP:0025486"
+  ],
+  "noisy": [
+   "HP:0000138",
+   "HP:0001760",
+   "HP:0009911",
+   "HP:0008368",
+   "HP:0025486",
+   "HP:0008573",
+   "HP:0011220"
+  ]
+ },
+ {
+  "case": "comphet_USH1G",
+  "type": "comphet",
+  "gene": "USH1G",
+  "variants": [
+   {
+    "chrom": "17",
+    "pos": 74920645,
+    "id": "1254706",
+    "ref": "C",
+    "alt": "T",
+    "gene": "USH1G",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:606943",
+     "ORPHA:231169",
+     "ORPHA:886"
+    ]
+   },
+   {
+    "chrom": "17",
+    "pos": 74920627,
+    "id": "493220",
+    "ref": "T",
+    "alt": "TGA",
+    "gene": "USH1G",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:276900",
+     "ORPHA:231169",
+     "ORPHA:886"
+    ]
+   }
+  ],
+  "disease": "ORPHA:231169",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000662",
+   "HP:0000572",
+   "HP:0000716",
+   "HP:0000750",
+   "HP:0000510"
+  ],
+  "noisy": [
+   "HP:0000504",
+   "HP:0000505",
+   "HP:0000716",
+   "HP:0000750",
+   "HP:0000556",
+   "HP:0002667",
+   "HP:0000131"
+  ]
+ },
+ {
+  "case": "hom_USH1G",
+  "type": "hom",
+  "gene": "USH1G",
+  "variants": [
+   {
+    "chrom": "17",
+    "pos": 74919831,
+    "id": "856259",
+    "ref": "A",
+    "alt": "AC",
+    "gene": "USH1G",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:606943",
+     "ORPHA:231169",
+     "ORPHA:886"
+    ]
+   }
+  ],
+  "disease": "ORPHA:231169",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000375",
+   "HP:0000750",
+   "HP:0002141",
+   "HP:0007663",
+   "HP:0000518"
+  ],
+  "noisy": [
+   "HP:0000375",
+   "HP:0000750",
+   "HP:0002141",
+   "HP:0000505",
+   "HP:0000518",
+   "HP:0002072"
+  ]
+ },
+ {
+  "case": "comphet_PI4KA",
+  "type": "comphet",
+  "gene": "PI4KA",
+  "variants": [
+   {
+    "chrom": "22",
+    "pos": 20764951,
+    "id": "1686063",
+    "ref": "C",
+    "alt": "T",
+    "gene": "PI4KA",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:616531"
+    ]
+   },
+   {
+    "chrom": "22",
+    "pos": 20710808,
+    "id": "1675874",
+    "ref": "G",
+    "alt": "A",
+    "gene": "PI4KA",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:616531"
+    ]
+   }
+  ],
+  "disease": "OMIM:616531",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001320",
+   "HP:0010292",
+   "HP:0001321",
+   "HP:0002804",
+   "HP:0001762"
+  ],
+  "noisy": [
+   "HP:0001320",
+   "HP:0010293",
+   "HP:0007360",
+   "HP:0002804",
+   "HP:0001883",
+   "HP:0011675"
+  ]
+ },
+ {
+  "case": "hom_PI4KA",
+  "type": "hom",
+  "gene": "PI4KA",
+  "variants": [
+   {
+    "chrom": "22",
+    "pos": 20764951,
+    "id": "1686063",
+    "ref": "C",
+    "alt": "T",
+    "gene": "PI4KA",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:616531"
+    ]
+   }
+  ],
+  "disease": "OMIM:616531",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0006380",
+   "HP:0007033",
+   "HP:0002089",
+   "HP:0000268",
+   "HP:0001320"
+  ],
+  "noisy": [
+   "HP:0006380",
+   "HP:0007033",
+   "HP:0006703",
+   "HP:0002683",
+   "HP:0001321",
+   "HP:0000407"
+  ]
+ },
+ {
+  "case": "comphet_SMARCAL1",
+  "type": "comphet",
+  "gene": "SMARCAL1",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 216428783,
+    "id": "2734387",
+    "ref": "G",
+    "alt": "A",
+    "gene": "SMARCAL1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:242900",
+     "ORPHA:1830"
+    ]
+   },
+   {
+    "chrom": "2",
+    "pos": 216415068,
+    "id": "804394",
+    "ref": "ATC",
+    "alt": "A",
+    "gene": "SMARCAL1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:242900",
+     "ORPHA:1830"
+    ]
+   }
+  ],
+  "disease": "OMIM:242900",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001888",
+   "HP:0005280",
+   "HP:0006453",
+   "HP:0000093",
+   "HP:0008689"
+  ],
+  "noisy": [
+   "HP:0001888",
+   "HP:0005280",
+   "HP:0003368",
+   "HP:0000093",
+   "HP:0000028",
+   "HP:0000746",
+   "HP:0030880"
+  ]
+ },
+ {
+  "case": "hom_SMARCAL1",
+  "type": "hom",
+  "gene": "SMARCAL1",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 216450873,
+    "id": "2914549",
+    "ref": "TC",
+    "alt": "T",
+    "gene": "SMARCAL1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:242900",
+     "ORPHA:1830"
+    ]
+   }
+  ],
+  "disease": "ORPHA:1830",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001324",
+   "HP:0000097",
+   "HP:0007957",
+   "HP:0012593",
+   "HP:0001999"
+  ],
+  "noisy": [
+   "HP:0001324",
+   "HP:0000097",
+   "HP:0000481",
+   "HP:0012593",
+   "HP:0000271",
+   "HP:0009237"
+  ]
+ },
+ {
+  "case": "comphet_ATP13A2",
+  "type": "comphet",
+  "gene": "ATP13A2",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 16993721,
+    "id": "982648",
+    "ref": "G",
+    "alt": "A",
+    "gene": "ATP13A2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:606693",
+     "OMIM:617225",
+     "ORPHA:306674",
+     "ORPHA:314632",
+     "ORPHA:513436"
+    ]
+   },
+   {
+    "chrom": "1",
+    "pos": 16992345,
+    "id": "465252",
+    "ref": "G",
+    "alt": "A",
+    "gene": "ATP13A2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:606693",
+     "OMIM:617225",
+     "ORPHA:306674",
+     "ORPHA:314632",
+     "ORPHA:513436"
+    ]
+   }
+  ],
+  "disease": "ORPHA:513436",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001272",
+   "HP:0002518",
+   "HP:0001288",
+   "HP:0000666",
+   "HP:0001260"
+  ],
+  "noisy": [
+   "HP:0001317",
+   "HP:0002500",
+   "HP:0001288",
+   "HP:0000639",
+   "HP:0002167",
+   "HP:0003687",
+   "HP:0001945"
+  ]
+ },
+ {
+  "case": "hom_ATP13A2",
+  "type": "hom",
+  "gene": "ATP13A2",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 17000466,
+    "id": "2046647",
+    "ref": "C",
+    "alt": "T",
+    "gene": "ATP13A2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:606693",
+     "OMIM:617225",
+     "OMIM:PS234200",
+     "ORPHA:306674",
+     "ORPHA:314632",
+     "ORPHA:385",
+     "ORPHA:513436"
+    ]
+   }
+  ],
+  "disease": "ORPHA:513436",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000011",
+   "HP:0000317",
+   "HP:0003477",
+   "HP:0001332",
+   "HP:0001347"
+  ],
+  "noisy": [
+   "HP:0000009",
+   "HP:0000317",
+   "HP:0003477",
+   "HP:0100022",
+   "HP:0031826",
+   "HP:0002024"
+  ]
+ },
+ {
+  "case": "comphet_DPM1",
+  "type": "comphet",
+  "gene": "DPM1",
+  "variants": [
+   {
+    "chrom": "20",
+    "pos": 50945875,
+    "id": "570864",
+    "ref": "ATGATGTAGTTTCC",
+    "alt": "A",
+    "gene": "DPM1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608799",
+     "ORPHA:79322"
+    ]
+   },
+   {
+    "chrom": "20",
+    "pos": 50948650,
+    "id": "6296",
+    "ref": "G",
+    "alt": "C",
+    "gene": "DPM1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:608799",
+     "ORPHA:79322"
+    ]
+   }
+  ],
+  "disease": "OMIM:608799",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003645",
+   "HP:0001508",
+   "HP:0000316",
+   "HP:0006879",
+   "HP:0001028"
+  ],
+  "noisy": [
+   "HP:0001928",
+   "HP:0004325",
+   "HP:0100886",
+   "HP:0006879",
+   "HP:0001028",
+   "HP:0001394"
+  ]
+ },
+ {
+  "case": "hom_DPM1",
+  "type": "hom",
+  "gene": "DPM1",
+  "variants": [
+   {
+    "chrom": "20",
+    "pos": 50945848,
+    "id": "1098270",
+    "ref": "T",
+    "alt": "C",
+    "gene": "DPM1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:608799",
+     "ORPHA:79322"
+    ]
+   }
+  ],
+  "disease": "ORPHA:79322",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0008947",
+   "HP:0006879",
+   "HP:0011152",
+   "HP:0005469",
+   "HP:0006380"
+  ],
+  "noisy": [
+   "HP:0008947",
+   "HP:0006879",
+   "HP:0011147",
+   "HP:0005469",
+   "HP:0006380",
+   "HP:0002419",
+   "HP:0025318"
+  ]
+ },
+ {
+  "case": "comphet_LAMB2",
+  "type": "comphet",
+  "gene": "LAMB2",
+  "variants": [
+   {
+    "chrom": "3",
+    "pos": 49132135,
+    "id": "29774",
+    "ref": "T",
+    "alt": "C",
+    "gene": "LAMB2",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:609049",
+     "OMIM:614199",
+     "ORPHA:2670",
+     "ORPHA:306507"
+    ]
+   },
+   {
+    "chrom": "3",
+    "pos": 49125866,
+    "id": "1712424",
+    "ref": "G",
+    "alt": "C",
+    "gene": "LAMB2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:609049",
+     "OMIM:614199",
+     "ORPHA:2670",
+     "ORPHA:306507"
+    ]
+   }
+  ],
+  "disease": "OMIM:614199",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001967",
+   "HP:0032582",
+   "HP:0000099",
+   "HP:0000510",
+   "HP:0000609"
+  ],
+  "noisy": [
+   "HP:0001967",
+   "HP:0032582",
+   "HP:0000095",
+   "HP:0000556",
+   "HP:0000609",
+   "HP:0003557",
+   "HP:0002493"
+  ]
+ },
+ {
+  "case": "hom_LAMB2",
+  "type": "hom",
+  "gene": "LAMB2",
+  "variants": [
+   {
+    "chrom": "3",
+    "pos": 49129153,
+    "id": "447697",
+    "ref": "C",
+    "alt": "A",
+    "gene": "LAMB2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:609049",
+     "OMIM:614199",
+     "ORPHA:2670",
+     "ORPHA:306507"
+    ]
+   }
+  ],
+  "disease": "OMIM:609049",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000969",
+   "HP:0001562",
+   "HP:0001265",
+   "HP:0007894",
+   "HP:0025492"
+  ],
+  "noisy": [
+   "HP:0000969",
+   "HP:0001562",
+   "HP:0001265",
+   "HP:0031605",
+   "HP:0025492",
+   "HP:0001406",
+   "HP:0001082"
+  ]
+ },
+ {
+  "case": "comphet_ANO5",
+  "type": "comphet",
+  "gene": "ANO5",
+  "variants": [
+   {
+    "chrom": "11",
+    "pos": 22221121,
+    "id": "1013307",
+    "ref": "GAT",
+    "alt": "G",
+    "gene": "ANO5",
+    "kind": "lof",
+    "diseases": []
+   },
+   {
+    "chrom": "11",
+    "pos": 22270431,
+    "id": "140555",
+    "ref": "A",
+    "alt": "G",
+    "gene": "ANO5",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:166260",
+     "OMIM:611307",
+     "OMIM:PS253600",
+     "ORPHA:102015",
+     "ORPHA:206549",
+     "ORPHA:53697"
+    ]
+   }
+  ],
+  "disease": "OMIM:611307",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003701",
+   "HP:0003749",
+   "HP:0009050",
+   "HP:0003458",
+   "HP:0008981"
+  ],
+  "noisy": [
+   "HP:0001324",
+   "HP:0003325",
+   "HP:0008956",
+   "HP:0003457",
+   "HP:0008981",
+   "HP:0002917",
+   "HP:0004322"
+  ]
+ },
+ {
+  "case": "hom_ANO5",
+  "type": "hom",
+  "gene": "ANO5",
+  "variants": [
+   {
+    "chrom": "11",
+    "pos": 22272922,
+    "id": "195002",
+    "ref": "AAGCTCAT",
+    "alt": "A",
+    "gene": "ANO5",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:166260",
+     "OMIM:611307",
+     "ORPHA:206549",
+     "ORPHA:53697"
+    ]
+   }
+  ],
+  "disease": "OMIM:611307",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003326",
+   "HP:0003749",
+   "HP:0003547",
+   "HP:0003701",
+   "HP:0003458"
+  ],
+  "noisy": [
+   "HP:0003326",
+   "HP:0003325",
+   "HP:0003547",
+   "HP:0001324",
+   "HP:0003457",
+   "HP:0001385",
+   "HP:0002380"
+  ]
+ },
+ {
+  "case": "comphet_CRELD1",
+  "type": "comphet",
+  "gene": "CRELD1",
+  "variants": [
+   {
+    "chrom": "3",
+    "pos": 9938107,
+    "id": "3361931",
+    "ref": "G",
+    "alt": "A",
+    "gene": "CRELD1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:606217"
+    ]
+   },
+   {
+    "chrom": "3",
+    "pos": 9934853,
+    "id": "3360571",
+    "ref": "C",
+    "alt": "CG",
+    "gene": "CRELD1",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:620771",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0012448",
+   "HP:0000175",
+   "HP:0000369",
+   "HP:0000486",
+   "HP:0000483"
+  ],
+  "noisy": [
+   "HP:0012447",
+   "HP:0000202",
+   "HP:0000357",
+   "HP:0000549",
+   "HP:0000539",
+   "HP:0000470"
+  ]
+ },
+ {
+  "case": "hom_CRELD1",
+  "type": "hom",
+  "gene": "CRELD1",
+  "variants": [
+   {
+    "chrom": "3",
+    "pos": 9938107,
+    "id": "3361931",
+    "ref": "G",
+    "alt": "A",
+    "gene": "CRELD1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:606217"
+    ]
+   }
+  ],
+  "disease": "OMIM:620771",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0002058",
+   "HP:0000565",
+   "HP:0000483",
+   "HP:0000160",
+   "HP:0000821"
+  ],
+  "noisy": [
+   "HP:0004673",
+   "HP:0000565",
+   "HP:0000483",
+   "HP:0011337",
+   "HP:0002926",
+   "HP:0001290",
+   "HP:0001288"
+  ]
+ },
+ {
+  "case": "comphet_DYM",
+  "type": "comphet",
+  "gene": "DYM",
+  "variants": [
+   {
+    "chrom": "18",
+    "pos": 49282177,
+    "id": "982866",
+    "ref": "T",
+    "alt": "C",
+    "gene": "DYM",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:223800",
+     "ORPHA:239"
+    ]
+   },
+   {
+    "chrom": "18",
+    "pos": 49379693,
+    "id": "3189",
+    "ref": "C",
+    "alt": "T",
+    "gene": "DYM",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:607326"
+    ]
+   }
+  ],
+  "disease": "ORPHA:239",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003311",
+   "HP:0008786",
+   "HP:0001508",
+   "HP:0002540",
+   "HP:0002857"
+  ],
+  "noisy": [
+   "HP:0003311",
+   "HP:0003796",
+   "HP:0004325",
+   "HP:0001288",
+   "HP:0002857",
+   "HP:0001508",
+   "HP:0000175"
+  ]
+ },
+ {
+  "case": "hom_DYM",
+  "type": "hom",
+  "gene": "DYM",
+  "variants": [
+   {
+    "chrom": "18",
+    "pos": 49282177,
+    "id": "982866",
+    "ref": "T",
+    "alt": "C",
+    "gene": "DYM",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:223800",
+     "ORPHA:239"
+    ]
+   }
+  ],
+  "disease": "ORPHA:239",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002747",
+   "HP:0003272",
+   "HP:0002540",
+   "HP:0001538",
+   "HP:0031233"
+  ],
+  "noisy": [
+   "HP:0002747",
+   "HP:0002644",
+   "HP:0001288",
+   "HP:0001538",
+   "HP:0031233",
+   "HP:0001263",
+   "HP:0000613"
+  ]
+ },
+ {
+  "case": "comphet_POLR3A",
+  "type": "comphet",
+  "gene": "POLR3A",
+  "variants": [
+   {
+    "chrom": "10",
+    "pos": 77993274,
+    "id": "2412671",
+    "ref": "C",
+    "alt": "A",
+    "gene": "POLR3A",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:PS312080",
+     "ORPHA:68356"
+    ]
+   },
+   {
+    "chrom": "10",
+    "pos": 77982180,
+    "id": "1030186",
+    "ref": "G",
+    "alt": "A",
+    "gene": "POLR3A",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:607694",
+     "OMIM:PS312080",
+     "ORPHA:137639",
+     "ORPHA:447893",
+     "ORPHA:447896",
+     "ORPHA:68356",
+     "ORPHA:77295",
+     "ORPHA:88637"
+    ]
+   }
+  ],
+  "disease": "ORPHA:447896",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0007359",
+   "HP:0005341",
+   "HP:0004322",
+   "HP:0000545",
+   "HP:0002079"
+  ],
+  "noisy": [
+   "HP:0007359",
+   "HP:0005341",
+   "HP:0004322",
+   "HP:0000545",
+   "HP:0002079",
+   "HP:0000256"
+  ]
+ },
+ {
+  "case": "hom_POLR3A",
+  "type": "hom",
+  "gene": "POLR3A",
+  "variants": [
+   {
+    "chrom": "10",
+    "pos": 77985961,
+    "id": "31149",
+    "ref": "G",
+    "alt": "A",
+    "gene": "POLR3A",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:264090",
+     "OMIM:607694",
+     "OMIM:PS312080",
+     "ORPHA:137639",
+     "ORPHA:3455",
+     "ORPHA:447893",
+     "ORPHA:447896",
+     "ORPHA:68356",
+     "ORPHA:77295",
+     "ORPHA:88637"
+    ]
+   }
+  ],
+  "disease": "ORPHA:447896",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002307",
+   "HP:0000639",
+   "HP:0002493",
+   "HP:0003429",
+   "HP:0001257"
+  ],
+  "noisy": [
+   "HP:0002307",
+   "HP:0000639",
+   "HP:0002493",
+   "HP:0003429",
+   "HP:0001257",
+   "HP:0003016",
+   "HP:0002667"
+  ]
+ },
+ {
+  "case": "comphet_POMT1",
+  "type": "comphet",
+  "gene": "POMT1",
+  "variants": [
+   {
+    "chrom": "9",
+    "pos": 131515444,
+    "id": "594265",
+    "ref": "CCT",
+    "alt": "C",
+    "gene": "POMT1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:236670",
+     "OMIM:609308",
+     "OMIM:613155",
+     "OMIM:PS236670",
+     "ORPHA:588",
+     "ORPHA:86812",
+     "ORPHA:899"
+    ]
+   },
+   {
+    "chrom": "9",
+    "pos": 131515460,
+    "id": "523808",
+    "ref": "C",
+    "alt": "T",
+    "gene": "POMT1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:236670",
+     "OMIM:609308",
+     "OMIM:613155",
+     "OMIM:PS236670",
+     "ORPHA:588",
+     "ORPHA:86812",
+     "ORPHA:899"
+    ]
+   }
+  ],
+  "disease": "ORPHA:588",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000501",
+   "HP:0001288",
+   "HP:0007360",
+   "HP:0004374",
+   "HP:0000518"
+  ],
+  "noisy": [
+   "HP:0000501",
+   "HP:0001288",
+   "HP:0001317",
+   "HP:0010549",
+   "HP:0000517",
+   "HP:0002167",
+   "HP:0006342"
+  ]
+ },
+ {
+  "case": "hom_POMT1",
+  "type": "hom",
+  "gene": "POMT1",
+  "variants": [
+   {
+    "chrom": "9",
+    "pos": 131507401,
+    "id": "1329035",
+    "ref": "G",
+    "alt": "A",
+    "gene": "POMT1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:236670",
+     "OMIM:609308",
+     "OMIM:613155",
+     "OMIM:PS236670",
+     "OMIM:PS253600",
+     "ORPHA:102015",
+     "ORPHA:588",
+     "ORPHA:86812",
+     "ORPHA:899"
+    ]
+   }
+  ],
+  "disease": "ORPHA:899",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000176",
+   "HP:0012400",
+   "HP:0001263",
+   "HP:0001274",
+   "HP:0000541"
+  ],
+  "noisy": [
+   "HP:0000176",
+   "HP:0012379",
+   "HP:0001263",
+   "HP:0007370",
+   "HP:0000541",
+   "HP:0012719",
+   "HP:0011109"
+  ]
+ },
+ {
+  "case": "comphet_ECEL1",
+  "type": "comphet",
+  "gene": "ECEL1",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 232484199,
+    "id": "435022",
+    "ref": "C",
+    "alt": "A",
+    "gene": "ECEL1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:615065",
+     "ORPHA:329457"
+    ]
+   },
+   {
+    "chrom": "2",
+    "pos": 232486498,
+    "id": "435024",
+    "ref": "CAGCCCGGACCGGGCCCCGGTGGCGCTGCGCGCAGCGCCCAACGGGA",
+    "alt": "C",
+    "gene": "ECEL1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:615065",
+     "ORPHA:329457"
+    ]
+   }
+  ],
+  "disease": "OMIM:615065",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003199",
+   "HP:0002650",
+   "HP:0000194",
+   "HP:0000160",
+   "HP:0012473"
+  ],
+  "noisy": [
+   "HP:0011805",
+   "HP:0010674",
+   "HP:0011338",
+   "HP:0011337",
+   "HP:0030809",
+   "HP:0003010",
+   "HP:0001250"
+  ]
+ },
+ {
+  "case": "hom_ECEL1",
+  "type": "hom",
+  "gene": "ECEL1",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 232484156,
+    "id": "39492",
+    "ref": "G",
+    "alt": "A",
+    "gene": "ECEL1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:615065",
+     "ORPHA:329457"
+    ]
+   }
+  ],
+  "disease": "OMIM:615065",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001762",
+   "HP:0000347",
+   "HP:0000175",
+   "HP:0003199",
+   "HP:0001181"
+  ],
+  "noisy": [
+   "HP:0001762",
+   "HP:0009118",
+   "HP:0000202",
+   "HP:0011805",
+   "HP:0001172",
+   "HP:0002376",
+   "HP:0010535"
+  ]
+ },
+ {
+  "case": "comphet_AUH",
+  "type": "comphet",
+  "gene": "AUH",
+  "variants": [
+   {
+    "chrom": "9",
+    "pos": 91220927,
+    "id": "1452715",
+    "ref": "G",
+    "alt": "A",
+    "gene": "AUH",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:250950",
+     "ORPHA:67046"
+    ]
+   },
+   {
+    "chrom": "9",
+    "pos": 91220816,
+    "id": "3359774",
+    "ref": "ACT",
+    "alt": "A",
+    "gene": "AUH",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:PS250950",
+     "ORPHA:289902"
+    ]
+   }
+  ],
+  "disease": "OMIM:250950",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002373",
+   "HP:0002500",
+   "HP:0000742",
+   "HP:0002305",
+   "HP:0001263"
+  ],
+  "noisy": [
+   "HP:0032894",
+   "HP:0010993",
+   "HP:0100716",
+   "HP:0004305",
+   "HP:0012758",
+   "HP:0011705",
+   "HP:0000962"
+  ]
+ },
+ {
+  "case": "hom_AUH",
+  "type": "hom",
+  "gene": "AUH",
+  "variants": [
+   {
+    "chrom": "9",
+    "pos": 91325317,
+    "id": "1332814",
+    "ref": "C",
+    "alt": "G",
+    "gene": "AUH",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:250950",
+     "ORPHA:67046"
+    ]
+   }
+  ],
+  "disease": "ORPHA:67046",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002134",
+   "HP:0001250",
+   "HP:0002240",
+   "HP:0001285",
+   "HP:0002073"
+  ],
+  "noisy": [
+   "HP:0010993",
+   "HP:0012638",
+   "HP:0003271",
+   "HP:0034353",
+   "HP:0002073",
+   "HP:0000575",
+   "HP:0100033"
+  ]
+ },
+ {
+  "case": "comphet_RPE65",
+  "type": "comphet",
+  "gene": "RPE65",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 68439046,
+    "id": "372493",
+    "ref": "CT",
+    "alt": "C",
+    "gene": "RPE65",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:204100",
+     "OMIM:613794",
+     "OMIM:618697",
+     "OMIM:PS204000",
+     "ORPHA:65",
+     "ORPHA:791"
+    ]
+   },
+   {
+    "chrom": "1",
+    "pos": 68431070,
+    "id": "850287",
+    "ref": "T",
+    "alt": "C",
+    "gene": "RPE65",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:204100",
+     "OMIM:613794",
+     "OMIM:PS204000",
+     "ORPHA:65",
+     "ORPHA:791"
+    ]
+   }
+  ],
+  "disease": "ORPHA:65",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000543",
+   "HP:0000563",
+   "HP:0000613",
+   "HP:0000365",
+   "HP:0007703"
+  ],
+  "noisy": [
+   "HP:0012795",
+   "HP:0100692",
+   "HP:0000504",
+   "HP:0000364",
+   "HP:0007703",
+   "HP:0001249"
+  ]
+ },
+ {
+  "case": "hom_RPE65",
+  "type": "hom",
+  "gene": "RPE65",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 68438212,
+    "id": "98826",
+    "ref": "T",
+    "alt": "C",
+    "gene": "RPE65",
+    "kind": "missense",
+    "diseases": []
+   }
+  ],
+  "disease": "ORPHA:791",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0030488",
+   "HP:0000501",
+   "HP:0030786",
+   "HP:0000405",
+   "HP:0000613"
+  ],
+  "noisy": [
+   "HP:0030468",
+   "HP:0000501",
+   "HP:0000504",
+   "HP:0011452",
+   "HP:0000613",
+   "HP:0000238",
+   "HP:0001894"
+  ]
+ },
+ {
+  "case": "comphet_PLOD3",
+  "type": "comphet",
+  "gene": "PLOD3",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 101210674,
+    "id": "3065547",
+    "ref": "C",
+    "alt": "G",
+    "gene": "PLOD3",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:612394",
+     "ORPHA:300284"
+    ]
+   },
+   {
+    "chrom": "7",
+    "pos": 101211595,
+    "id": "2159445",
+    "ref": "G",
+    "alt": "A",
+    "gene": "PLOD3",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:612394",
+     "ORPHA:300284"
+    ]
+   }
+  ],
+  "disease": "OMIM:612394",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003196",
+   "HP:0009471",
+   "HP:0000164",
+   "HP:0001776",
+   "HP:0032199"
+  ],
+  "noisy": [
+   "HP:0005105",
+   "HP:0009471",
+   "HP:0000153",
+   "HP:0001762",
+   "HP:0032199",
+   "HP:0000716"
+  ]
+ },
+ {
+  "case": "hom_PLOD3",
+  "type": "hom",
+  "gene": "PLOD3",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 101210674,
+    "id": "3065547",
+    "ref": "C",
+    "alt": "G",
+    "gene": "PLOD3",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:612394",
+     "ORPHA:300284"
+    ]
+   }
+  ],
+  "disease": "OMIM:612394",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000586",
+   "HP:0000926",
+   "HP:0010557",
+   "HP:0003393",
+   "HP:0003645"
+  ],
+  "noisy": [
+   "HP:0000586",
+   "HP:0003312",
+   "HP:0004097",
+   "HP:0009130",
+   "HP:0003645",
+   "HP:0000093",
+   "HP:0010501"
+  ]
+ },
+ {
+  "case": "comphet_SLC35A3",
+  "type": "comphet",
+  "gene": "SLC35A3",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 100017814,
+    "id": "89030",
+    "ref": "A",
+    "alt": "G",
+    "gene": "SLC35A3",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:615553",
+     "ORPHA:370943"
+    ]
+   },
+   {
+    "chrom": "1",
+    "pos": 100015391,
+    "id": "959238",
+    "ref": "C",
+    "alt": "T",
+    "gene": "SLC35A3",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:615553",
+     "ORPHA:370943"
+    ]
+   }
+  ],
+  "disease": "OMIM:615553",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002804",
+   "HP:0011153",
+   "HP:0000729",
+   "HP:0004976",
+   "HP:0100490"
+  ],
+  "noisy": [
+   "HP:0002804",
+   "HP:0011153",
+   "HP:0000729",
+   "HP:0034670",
+   "HP:0001220",
+   "HP:0002539",
+   "HP:0000570"
+  ]
+ },
+ {
+  "case": "hom_SLC35A3",
+  "type": "hom",
+  "gene": "SLC35A3",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 99993588,
+    "id": "1456292",
+    "ref": "AT",
+    "alt": "A",
+    "gene": "SLC35A3",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:615553",
+     "ORPHA:370943"
+    ]
+   }
+  ],
+  "disease": "ORPHA:370943",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002342",
+   "HP:0001765",
+   "HP:0010864",
+   "HP:0004976",
+   "HP:0002650"
+  ],
+  "noisy": [
+   "HP:0002342",
+   "HP:0001765",
+   "HP:0010864",
+   "HP:0004976",
+   "HP:0002650",
+   "HP:0002061",
+   "HP:0001712"
+  ]
+ },
+ {
+  "case": "comphet_GPHN",
+  "type": "comphet",
+  "gene": "GPHN",
+  "variants": [
+   {
+    "chrom": "14",
+    "pos": 66776488,
+    "id": "2059907",
+    "ref": "C",
+    "alt": "A",
+    "gene": "GPHN",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:615501",
+     "ORPHA:308400",
+     "ORPHA:833"
+    ]
+   },
+   {
+    "chrom": "14",
+    "pos": 66922783,
+    "id": "1309047",
+    "ref": "CCT",
+    "alt": "C",
+    "gene": "GPHN",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:615501",
+     "ORPHA:308400",
+     "ORPHA:833"
+    ]
+   }
+  ],
+  "disease": "OMIM:615501",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0011344",
+   "HP:0001347",
+   "HP:0002509",
+   "HP:0008936",
+   "HP:0002197"
+  ],
+  "noisy": [
+   "HP:0011344",
+   "HP:0031826",
+   "HP:0009127",
+   "HP:0001252",
+   "HP:0002197",
+   "HP:0010536",
+   "HP:0002953"
+  ]
+ },
+ {
+  "case": "hom_GPHN",
+  "type": "hom",
+  "gene": "GPHN",
+  "variants": [
+   {
+    "chrom": "14",
+    "pos": 66776488,
+    "id": "2059907",
+    "ref": "C",
+    "alt": "A",
+    "gene": "GPHN",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:615501",
+     "ORPHA:308400",
+     "ORPHA:833"
+    ]
+   }
+  ],
+  "disease": "OMIM:615501",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002126",
+   "HP:0001276",
+   "HP:0003537",
+   "HP:0011968",
+   "HP:0011344"
+  ],
+  "noisy": [
+   "HP:0002126",
+   "HP:0001276",
+   "HP:0003537",
+   "HP:0011968",
+   "HP:0001263",
+   "HP:0007002"
+  ]
+ },
+ {
+  "case": "comphet_MLPH",
+  "type": "comphet",
+  "gene": "MLPH",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 237493530,
+    "id": "191157",
+    "ref": "G",
+    "alt": "A",
+    "gene": "MLPH",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:609227",
+     "ORPHA:381",
+     "ORPHA:79478"
+    ]
+   },
+   {
+    "chrom": "2",
+    "pos": 237493529,
+    "id": "4268",
+    "ref": "C",
+    "alt": "T",
+    "gene": "MLPH",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:609227",
+     "ORPHA:381",
+     "ORPHA:79478"
+    ]
+   }
+  ],
+  "disease": "OMIM:609227",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0004527",
+   "HP:0000707",
+   "HP:0002721",
+   "HP:0002218",
+   "HP:0002227"
+  ],
+  "noisy": [
+   "HP:0002220",
+   "HP:0000707",
+   "HP:0010978",
+   "HP:0002218",
+   "HP:0002227",
+   "HP:0001274",
+   "HP:0002908"
+  ]
+ },
+ {
+  "case": "hom_MLPH",
+  "type": "hom",
+  "gene": "MLPH",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 237493530,
+    "id": "191157",
+    "ref": "G",
+    "alt": "A",
+    "gene": "MLPH",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:609227",
+     "ORPHA:381",
+     "ORPHA:79478"
+    ]
+   }
+  ],
+  "disease": "OMIM:609227",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002227",
+   "HP:0002218",
+   "HP:0002721",
+   "HP:0000707",
+   "HP:0004527"
+  ],
+  "noisy": [
+   "HP:0002227",
+   "HP:0002218",
+   "HP:0010978",
+   "HP:0000707",
+   "HP:0004527",
+   "HP:0003409",
+   "HP:0000533"
+  ]
+ },
+ {
+  "case": "comphet_CD55",
+  "type": "comphet",
+  "gene": "CD55",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 207322429,
+    "id": "3064847",
+    "ref": "G",
+    "alt": "T",
+    "gene": "CD55",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:226300",
+     "ORPHA:566175"
+    ]
+   },
+   {
+    "chrom": "1",
+    "pos": 207326812,
+    "id": "2714425",
+    "ref": "G",
+    "alt": "A",
+    "gene": "CD55",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:226300",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002024",
+   "HP:0001541",
+   "HP:0030243",
+   "HP:0002639",
+   "HP:0002242"
+  ],
+  "noisy": [
+   "HP:0002024",
+   "HP:0001541",
+   "HP:0030243",
+   "HP:0030846",
+   "HP:0012718",
+   "HP:0000822",
+   "HP:0001250"
+  ]
+ },
+ {
+  "case": "hom_CD55",
+  "type": "hom",
+  "gene": "CD55",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 207322569,
+    "id": "1066401",
+    "ref": "T",
+    "alt": "G",
+    "gene": "CD55",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:226300",
+     "OMIM:613793",
+     "ORPHA:566175"
+    ]
+   }
+  ],
+  "disease": "OMIM:226300",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0007430",
+   "HP:0001903",
+   "HP:0005214",
+   "HP:0000969",
+   "HP:0003073"
+  ],
+  "noisy": [
+   "HP:0000969",
+   "HP:0001877",
+   "HP:0002242",
+   "HP:0003073",
+   "HP:0001638",
+   "HP:0034076"
+  ]
+ },
+ {
+  "case": "comphet_TRAPPC9",
+  "type": "comphet",
+  "gene": "TRAPPC9",
+  "variants": [
+   {
+    "chrom": "8",
+    "pos": 140450842,
+    "id": "437051",
+    "ref": "G",
+    "alt": "GA",
+    "gene": "TRAPPC9",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:613192",
+     "ORPHA:88616"
+    ]
+   },
+   {
+    "chrom": "8",
+    "pos": 140221524,
+    "id": "694658",
+    "ref": "G",
+    "alt": "A",
+    "gene": "TRAPPC9",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:613192",
+     "ORPHA:88616"
+    ]
+   }
+  ],
+  "disease": "OMIM:613192",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001238",
+   "HP:0007068",
+   "HP:0005484",
+   "HP:0000601",
+   "HP:0031936"
+  ],
+  "noisy": [
+   "HP:0001238",
+   "HP:0001320",
+   "HP:0005484",
+   "HP:0000601",
+   "HP:0031936",
+   "HP:0000501",
+   "HP:0006118"
+  ]
+ },
+ {
+  "case": "hom_TRAPPC9",
+  "type": "hom",
+  "gene": "TRAPPC9",
+  "variants": [
+   {
+    "chrom": "8",
+    "pos": 140451007,
+    "id": "130637",
+    "ref": "C",
+    "alt": "A",
+    "gene": "TRAPPC9",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:613192",
+     "ORPHA:88616"
+    ]
+   }
+  ],
+  "disease": "OMIM:613192",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000204",
+   "HP:0002079",
+   "HP:0001250",
+   "HP:0001956",
+   "HP:0040196"
+  ],
+  "noisy": [
+   "HP:0000204",
+   "HP:0002079",
+   "HP:0012638",
+   "HP:0001513",
+   "HP:0040196",
+   "HP:0045073",
+   "HP:0002120"
+  ]
+ },
+ {
+  "case": "comphet_PKD1L1",
+  "type": "comphet",
+  "gene": "PKD1L1",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 47831213,
+    "id": "235796",
+    "ref": "TCA",
+    "alt": "T",
+    "gene": "PKD1L1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:617205",
+     "ORPHA:101063"
+    ]
+   },
+   {
+    "chrom": "7",
+    "pos": 47929204,
+    "id": "3054974",
+    "ref": "CTT",
+    "alt": "C",
+    "gene": "PKD1L1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:617205"
+    ]
+   }
+  ],
+  "disease": "OMIM:617205",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0011539",
+   "HP:0011540",
+   "HP:0004383",
+   "HP:0011538",
+   "HP:0004935"
+  ],
+  "noisy": [
+   "HP:0011535",
+   "HP:0011534",
+   "HP:0001961",
+   "HP:0004935",
+   "HP:0000622",
+   "HP:0008619"
+  ]
+ },
+ {
+  "case": "hom_PKD1L1",
+  "type": "hom",
+  "gene": "PKD1L1",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 47893998,
+    "id": "1928308",
+    "ref": "TG",
+    "alt": "T",
+    "gene": "PKD1L1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:617205"
+    ]
+   }
+  ],
+  "disease": "OMIM:617205",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0011579",
+   "HP:0011540",
+   "HP:0001629",
+   "HP:0011539",
+   "HP:0031834"
+  ],
+  "noisy": [
+   "HP:0011579",
+   "HP:0001669",
+   "HP:0001629",
+   "HP:0011535",
+   "HP:0031834",
+   "HP:0003457",
+   "HP:0032561"
+  ]
+ },
+ {
+  "case": "comphet_CFAP410",
+  "type": "comphet",
+  "gene": "CFAP410",
+  "variants": [
+   {
+    "chrom": "21",
+    "pos": 44333054,
+    "id": "1522689",
+    "ref": "G",
+    "alt": "GGCGCGGCAGGGT",
+    "gene": "CFAP410",
+    "kind": "other",
+    "diseases": [
+     "OMIM:617547",
+     "ORPHA:653709"
+    ]
+   },
+   {
+    "chrom": "21",
+    "pos": 44330327,
+    "id": "812234",
+    "ref": "C",
+    "alt": "G",
+    "gene": "CFAP410",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:268000",
+     "OMIM:602271",
+     "OMIM:PS268000",
+     "ORPHA:168549",
+     "ORPHA:791"
+    ]
+   }
+  ],
+  "disease": "OMIM:617547",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0007843",
+   "HP:0007814",
+   "HP:0007663",
+   "HP:0007787",
+   "HP:0001956"
+  ],
+  "noisy": [
+   "HP:0008046",
+   "HP:0007703",
+   "HP:0007663",
+   "HP:0007787",
+   "HP:0001513",
+   "HP:0030682",
+   "HP:0001250"
+  ]
+ },
+ {
+  "case": "hom_CFAP410",
+  "type": "hom",
+  "gene": "CFAP410",
+  "variants": [
+   {
+    "chrom": "21",
+    "pos": 44337648,
+    "id": "866283",
+    "ref": "C",
+    "alt": "A",
+    "gene": "CFAP410",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:617547",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0100018",
+   "HP:0030856",
+   "HP:0000613",
+   "HP:0004322",
+   "HP:0007737"
+  ],
+  "noisy": [
+   "HP:0100018",
+   "HP:0030856",
+   "HP:0000613",
+   "HP:0001510",
+   "HP:0000580",
+   "HP:0002665",
+   "HP:0007000"
+  ]
+ },
+ {
+  "case": "comphet_BCKDHA",
+  "type": "comphet",
+  "gene": "BCKDHA",
+  "variants": [
+   {
+    "chrom": "19",
+    "pos": 41414149,
+    "id": "204378",
+    "ref": "G",
+    "alt": "A",
+    "gene": "BCKDHA",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:248600",
+     "OMIM:PS248600",
+     "ORPHA:511"
+    ]
+   },
+   {
+    "chrom": "19",
+    "pos": 41422163,
+    "id": "431985",
+    "ref": "G",
+    "alt": "C",
+    "gene": "BCKDHA",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:248600",
+     "OMIM:PS248600",
+     "ORPHA:511"
+    ]
+   }
+  ],
+  "disease": "OMIM:248600",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001276",
+   "HP:0001252",
+   "HP:0002013",
+   "HP:0033155",
+   "HP:0008872"
+  ],
+  "noisy": [
+   "HP:0003808",
+   "HP:0002017",
+   "HP:0033108",
+   "HP:0011968",
+   "HP:0020136",
+   "HP:0000212"
+  ]
+ },
+ {
+  "case": "hom_BCKDHA",
+  "type": "hom",
+  "gene": "BCKDHA",
+  "variants": [
+   {
+    "chrom": "19",
+    "pos": 41410638,
+    "id": "1075969",
+    "ref": "A",
+    "alt": "ACC",
+    "gene": "BCKDHA",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:PS248600",
+     "ORPHA:511"
+    ]
+   }
+  ],
+  "disease": "OMIM:248600",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0410066",
+   "HP:0001249",
+   "HP:0033155",
+   "HP:0002013",
+   "HP:0001250"
+  ],
+  "noisy": [
+   "HP:0031980",
+   "HP:0001249",
+   "HP:0033108",
+   "HP:0002017",
+   "HP:0012638",
+   "HP:0001254",
+   "HP:0002942"
+  ]
+ },
+ {
+  "case": "comphet_HPS5",
+  "type": "comphet",
+  "gene": "HPS5",
+  "variants": [
+   {
+    "chrom": "11",
+    "pos": 18311452,
+    "id": "1191090",
+    "ref": "C",
+    "alt": "A",
+    "gene": "HPS5",
+    "kind": "lof",
+    "diseases": []
+   },
+   {
+    "chrom": "11",
+    "pos": 18317776,
+    "id": "2736597",
+    "ref": "A",
+    "alt": "AG",
+    "gene": "HPS5",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:PS203300",
+     "ORPHA:79430"
+    ]
+   }
+  ],
+  "disease": "OMIM:614074",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0001107",
+   "HP:0007750",
+   "HP:0000132",
+   "HP:0004866",
+   "HP:0012805"
+  ],
+  "noisy": [
+   "HP:0001107",
+   "HP:0007750",
+   "HP:0001892",
+   "HP:0003540",
+   "HP:0008034",
+   "HP:0004447",
+   "HP:0003031"
+  ]
+ },
+ {
+  "case": "hom_HPS5",
+  "type": "hom",
+  "gene": "HPS5",
+  "variants": [
+   {
+    "chrom": "11",
+    "pos": 18309013,
+    "id": "627333",
+    "ref": "AC",
+    "alt": "A",
+    "gene": "HPS5",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614074",
+     "OMIM:PS203300",
+     "ORPHA:231512",
+     "ORPHA:79430"
+    ]
+   }
+  ],
+  "disease": "OMIM:614074",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0007663",
+   "HP:0033263",
+   "HP:0000666",
+   "HP:0003010",
+   "HP:0012805"
+  ],
+  "noisy": [
+   "HP:0007663",
+   "HP:0012530",
+   "HP:0000666",
+   "HP:0001892",
+   "HP:0012805",
+   "HP:0001751",
+   "HP:0000723"
+  ]
+ },
+ {
+  "case": "comphet_FGA",
+  "type": "comphet",
+  "gene": "FGA",
+  "variants": [
+   {
+    "chrom": "4",
+    "pos": 154585712,
+    "id": "16411",
+    "ref": "G",
+    "alt": "A",
+    "gene": "FGA",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:105200",
+     "OMIM:202400",
+     "OMIM:616004",
+     "ORPHA:335",
+     "ORPHA:85450",
+     "ORPHA:98880",
+     "ORPHA:98881"
+    ]
+   },
+   {
+    "chrom": "4",
+    "pos": 154589514,
+    "id": "16399",
+    "ref": "G",
+    "alt": "A",
+    "gene": "FGA",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:202400",
+     "OMIM:616004",
+     "ORPHA:335",
+     "ORPHA:98880",
+     "ORPHA:98881"
+    ]
+   }
+  ],
+  "disease": "ORPHA:98881",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000225",
+   "HP:0004936",
+   "HP:0002239",
+   "HP:0000421",
+   "HP:0001892"
+  ],
+  "noisy": [
+   "HP:0000225",
+   "HP:0004936",
+   "HP:0002239",
+   "HP:0000421",
+   "HP:0001892",
+   "HP:0001324",
+   "HP:0008186"
+  ]
+ },
+ {
+  "case": "hom_FGA",
+  "type": "hom",
+  "gene": "FGA",
+  "variants": [
+   {
+    "chrom": "4",
+    "pos": 154585712,
+    "id": "16411",
+    "ref": "G",
+    "alt": "A",
+    "gene": "FGA",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:105200",
+     "OMIM:202400",
+     "OMIM:616004",
+     "ORPHA:335",
+     "ORPHA:85450",
+     "ORPHA:98880",
+     "ORPHA:98881"
+    ]
+   }
+  ],
+  "disease": "ORPHA:98881",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000421",
+   "HP:0004936",
+   "HP:0000225",
+   "HP:0002239",
+   "HP:0001892"
+  ],
+  "noisy": [
+   "HP:0000421",
+   "HP:0004936",
+   "HP:0000168",
+   "HP:0002239",
+   "HP:0001892",
+   "HP:0002793",
+   "HP:0007703"
+  ]
+ },
+ {
+  "case": "comphet_RETREG1",
+  "type": "comphet",
+  "gene": "RETREG1",
+  "variants": [
+   {
+    "chrom": "5",
+    "pos": 16565788,
+    "id": "330",
+    "ref": "G",
+    "alt": "A",
+    "gene": "RETREG1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:613115",
+     "OMIM:PS118220",
+     "ORPHA:166",
+     "ORPHA:970"
+    ]
+   },
+   {
+    "chrom": "5",
+    "pos": 16477736,
+    "id": "328",
+    "ref": "G",
+    "alt": "C",
+    "gene": "RETREG1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:613115",
+     "OMIM:PS118220",
+     "ORPHA:166",
+     "ORPHA:970"
+    ]
+   }
+  ],
+  "disease": "ORPHA:970",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0005930",
+   "HP:0002815",
+   "HP:0003307",
+   "HP:0000975",
+   "HP:0001842"
+  ],
+  "noisy": [
+   "HP:0005930",
+   "HP:0002815",
+   "HP:0003307",
+   "HP:0007550",
+   "HP:0001842",
+   "HP:0001012",
+   "HP:0001945"
+  ]
+ },
+ {
+  "case": "hom_RETREG1",
+  "type": "hom",
+  "gene": "RETREG1",
+  "variants": [
+   {
+    "chrom": "5",
+    "pos": 16565788,
+    "id": "330",
+    "ref": "G",
+    "alt": "A",
+    "gene": "RETREG1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:613115",
+     "OMIM:PS118220",
+     "ORPHA:166",
+     "ORPHA:970"
+    ]
+   }
+  ],
+  "disease": "ORPHA:970",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0005930",
+   "HP:0002645",
+   "HP:0003028",
+   "HP:0001810",
+   "HP:0001842"
+  ],
+  "noisy": [
+   "HP:0005930",
+   "HP:0002645",
+   "HP:0003028",
+   "HP:0008404",
+   "HP:0010177",
+   "HP:0002451",
+   "HP:0006482"
+  ]
+ },
+ {
+  "case": "comphet_PTPRC",
+  "type": "comphet",
+  "gene": "PTPRC",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 198702531,
+    "id": "636414",
+    "ref": "G",
+    "alt": "A",
+    "gene": "PTPRC",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608971"
+    ]
+   },
+   {
+    "chrom": "1",
+    "pos": 198742338,
+    "id": "2819338",
+    "ref": "C",
+    "alt": "T",
+    "gene": "PTPRC",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608971",
+     "OMIM:619924"
+    ]
+   }
+  ],
+  "disease": "OMIM:619924",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0010976",
+   "HP:0000988",
+   "HP:0005404",
+   "HP:0040218",
+   "HP:0002849"
+  ],
+  "noisy": [
+   "HP:0010976",
+   "HP:0011123",
+   "HP:0005404",
+   "HP:0040089",
+   "HP:0002849",
+   "HP:0000518"
+  ]
+ },
+ {
+  "case": "hom_PTPRC",
+  "type": "hom",
+  "gene": "PTPRC",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 198742338,
+    "id": "2819338",
+    "ref": "C",
+    "alt": "T",
+    "gene": "PTPRC",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608971",
+     "OMIM:619924"
+    ]
+   }
+  ],
+  "disease": "OMIM:619924",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002850",
+   "HP:0004313",
+   "HP:0004315",
+   "HP:0005404",
+   "HP:0001888"
+  ],
+  "noisy": [
+   "HP:0002850",
+   "HP:0010701",
+   "HP:0004315",
+   "HP:0005404",
+   "HP:0001888",
+   "HP:0002650",
+   "HP:0005165"
+  ]
+ },
+ {
+  "case": "comphet_TCTN1",
+  "type": "comphet",
+  "gene": "TCTN1",
+  "variants": [
+   {
+    "chrom": "12",
+    "pos": 110642269,
+    "id": "3574252",
+    "ref": "CAAAT",
+    "alt": "C",
+    "gene": "TCTN1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614173",
+     "OMIM:PS213300",
+     "OMIM:PS249000",
+     "ORPHA:475",
+     "ORPHA:564"
+    ]
+   },
+   {
+    "chrom": "12",
+    "pos": 110614207,
+    "id": "1033279",
+    "ref": "C",
+    "alt": "CTCCT",
+    "gene": "TCTN1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614173",
+     "OMIM:PS213300",
+     "OMIM:PS249000",
+     "ORPHA:475",
+     "ORPHA:564"
+    ]
+   }
+  ],
+  "disease": "ORPHA:475",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001696",
+   "HP:0000864",
+   "HP:0000639",
+   "HP:0001829",
+   "HP:0003312"
+  ],
+  "noisy": [
+   "HP:0001696",
+   "HP:0000818",
+   "HP:0000639",
+   "HP:0001829",
+   "HP:0003468",
+   "HP:0001627",
+   "HP:0003460"
+  ]
+ },
+ {
+  "case": "hom_TCTN1",
+  "type": "hom",
+  "gene": "TCTN1",
+  "variants": [
+   {
+    "chrom": "12",
+    "pos": 110645098,
+    "id": "1374980",
+    "ref": "TC",
+    "alt": "T",
+    "gene": "TCTN1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:PS213300",
+     "OMIM:PS249000",
+     "ORPHA:475",
+     "ORPHA:564"
+    ]
+   }
+  ],
+  "disease": "ORPHA:564",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002612",
+   "HP:0001737",
+   "HP:0007370",
+   "HP:0001562",
+   "HP:0000518"
+  ],
+  "noisy": [
+   "HP:0002612",
+   "HP:0001737",
+   "HP:0033725",
+   "HP:0001562",
+   "HP:0000517",
+   "HP:0000523",
+   "HP:0012048"
+  ]
+ },
+ {
+  "case": "comphet_SLC2A10",
+  "type": "comphet",
+  "gene": "SLC2A10",
+  "variants": [
+   {
+    "chrom": "20",
+    "pos": 46725514,
+    "id": "1392857",
+    "ref": "AC",
+    "alt": "A",
+    "gene": "SLC2A10",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:208050",
+     "OMIM:PS607086",
+     "ORPHA:3342",
+     "ORPHA:91387"
+    ]
+   },
+   {
+    "chrom": "20",
+    "pos": 46726884,
+    "id": "161100",
+    "ref": "G",
+    "alt": "A",
+    "gene": "SLC2A10",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:208050",
+     "OMIM:PS607086",
+     "ORPHA:3342",
+     "ORPHA:91387"
+    ]
+   }
+  ],
+  "disease": "ORPHA:3342",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001838",
+   "HP:0001695",
+   "HP:0012819",
+   "HP:0001644",
+   "HP:0011302"
+  ],
+  "noisy": [
+   "HP:5210430",
+   "HP:0001695",
+   "HP:0001637",
+   "HP:0001644",
+   "HP:0100871",
+   "HP:0001943",
+   "HP:0011968"
+  ]
+ },
+ {
+  "case": "hom_SLC2A10",
+  "type": "hom",
+  "gene": "SLC2A10",
+  "variants": [
+   {
+    "chrom": "20",
+    "pos": 46725430,
+    "id": "4590",
+    "ref": "C",
+    "alt": "T",
+    "gene": "SLC2A10",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:208050",
+     "OMIM:PS607086",
+     "ORPHA:3342",
+     "ORPHA:91387"
+    ]
+   }
+  ],
+  "disease": "OMIM:208050",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001290",
+   "HP:0002650",
+   "HP:0004955",
+   "HP:0000272",
+   "HP:0000963"
+  ],
+  "noisy": [
+   "HP:0001252",
+   "HP:0002650",
+   "HP:0005116",
+   "HP:0010668",
+   "HP:0008065",
+   "HP:0001873",
+   "HP:0011900"
+  ]
+ },
+ {
+  "case": "comphet_MSH6",
+  "type": "comphet",
+  "gene": "MSH6",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 47800170,
+    "id": "2673652",
+    "ref": "C",
+    "alt": "CT",
+    "gene": "MSH6",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614350",
+     "ORPHA:140162",
+     "ORPHA:144"
+    ]
+   },
+   {
+    "chrom": "2",
+    "pos": 47806295,
+    "id": "619875",
+    "ref": "A",
+    "alt": "AACTC",
+    "gene": "MSH6",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614350",
+     "ORPHA:140162",
+     "ORPHA:144"
+    ]
+   }
+  ],
+  "disease": "ORPHA:144",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002239",
+   "HP:0002893",
+   "HP:0001123",
+   "HP:0003003",
+   "HP:0002671"
+  ],
+  "noisy": [
+   "HP:0011029",
+   "HP:0002893",
+   "HP:0001123",
+   "HP:0100273",
+   "HP:0002671",
+   "HP:0002099",
+   "HP:0100318"
+  ]
+ },
+ {
+  "case": "hom_MSH6",
+  "type": "hom",
+  "gene": "MSH6",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 47800177,
+    "id": "89262",
+    "ref": "C",
+    "alt": "T",
+    "gene": "MSH6",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608089",
+     "OMIM:614350",
+     "OMIM:PS120435",
+     "ORPHA:140162",
+     "ORPHA:144",
+     "ORPHA:443909"
+    ]
+   }
+  ],
+  "disease": "ORPHA:144",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0010786",
+   "HP:0100031",
+   "HP:0002354",
+   "HP:0100571",
+   "HP:0100615"
+  ],
+  "noisy": [
+   "HP:0010786",
+   "HP:0100031",
+   "HP:0100543",
+   "HP:0100571",
+   "HP:0100615",
+   "HP:0007703",
+   "HP:0001627"
+  ]
+ },
+ {
+  "case": "comphet_SCN5A",
+  "type": "comphet",
+  "gene": "SCN5A",
+  "variants": [
+   {
+    "chrom": "3",
+    "pos": 38554272,
+    "id": "254157",
+    "ref": "T",
+    "alt": "TACCC",
+    "gene": "SCN5A",
+    "kind": "other",
+    "diseases": [
+     "OMIM:601144",
+     "OMIM:PS601144",
+     "ORPHA:130"
+    ]
+   },
+   {
+    "chrom": "3",
+    "pos": 38597887,
+    "id": "201558",
+    "ref": "GC",
+    "alt": "G",
+    "gene": "SCN5A",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "ORPHA:130",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0004751",
+   "HP:0001279",
+   "HP:0011712",
+   "HP:0012251",
+   "HP:0001649"
+  ],
+  "noisy": [
+   "HP:0004756",
+   "HP:0001279",
+   "HP:0011712",
+   "HP:0012249",
+   "HP:0001649",
+   "HP:0002020"
+  ]
+ },
+ {
+  "case": "hom_SCN5A",
+  "type": "hom",
+  "gene": "SCN5A",
+  "variants": [
+   {
+    "chrom": "3",
+    "pos": 38556452,
+    "id": "2506125",
+    "ref": "G",
+    "alt": "A",
+    "gene": "SCN5A",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "ORPHA:871",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0002027",
+   "HP:0002321",
+   "HP:0012722",
+   "HP:0011675",
+   "HP:0011710"
+  ],
+  "noisy": [
+   "HP:0011458",
+   "HP:0002321",
+   "HP:0031546",
+   "HP:0011675",
+   "HP:0012722",
+   "HP:0007291",
+   "HP:0002827"
+  ]
+ },
+ {
+  "case": "comphet_ARV1",
+  "type": "comphet",
+  "gene": "ARV1",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 230995820,
+    "id": "839151",
+    "ref": "C",
+    "alt": "CA",
+    "gene": "ARV1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:616271",
+     "OMIM:617020",
+     "ORPHA:445038"
+    ]
+   },
+   {
+    "chrom": "1",
+    "pos": 230988440,
+    "id": "224496",
+    "ref": "G",
+    "alt": "A",
+    "gene": "ARV1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:617020"
+    ]
+   }
+  ],
+  "disease": "OMIM:617020",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0007843",
+   "HP:0001251",
+   "HP:0002376",
+   "HP:0002133",
+   "HP:0002835"
+  ],
+  "noisy": [
+   "HP:0008046",
+   "HP:0001251",
+   "HP:0012759",
+   "HP:0001250",
+   "HP:0002795",
+   "HP:0001133",
+   "HP:0002091"
+  ]
+ },
+ {
+  "case": "hom_ARV1",
+  "type": "hom",
+  "gene": "ARV1",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 230988318,
+    "id": "1028780",
+    "ref": "A",
+    "alt": "G",
+    "gene": "ARV1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:617020"
+    ]
+   }
+  ],
+  "disease": "OMIM:617020",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002187",
+   "HP:0031165",
+   "HP:0002020",
+   "HP:0007843",
+   "HP:0008936"
+  ],
+  "noisy": [
+   "HP:0002187",
+   "HP:0031165",
+   "HP:0002020",
+   "HP:0008046",
+   "HP:0008936",
+   "HP:0001249",
+   "HP:0010841"
+  ]
+ },
+ {
+  "case": "comphet_GALNS",
+  "type": "comphet",
+  "gene": "GALNS",
+  "variants": [
+   {
+    "chrom": "16",
+    "pos": 88824766,
+    "id": "2122348",
+    "ref": "C",
+    "alt": "G",
+    "gene": "GALNS",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:253000",
+     "ORPHA:309297",
+     "ORPHA:582"
+    ]
+   },
+   {
+    "chrom": "16",
+    "pos": 88836223,
+    "id": "1048418",
+    "ref": "T",
+    "alt": "G",
+    "gene": "GALNS",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:253000",
+     "ORPHA:309297",
+     "ORPHA:582"
+    ]
+   }
+  ],
+  "disease": "OMIM:253000",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003307",
+   "HP:0002650",
+   "HP:0001270",
+   "HP:0000939",
+   "HP:0002857"
+  ],
+  "noisy": [
+   "HP:0003307",
+   "HP:0002650",
+   "HP:0001270",
+   "HP:0000939",
+   "HP:0002857",
+   "HP:0025343"
+  ]
+ },
+ {
+  "case": "hom_GALNS",
+  "type": "hom",
+  "gene": "GALNS",
+  "variants": [
+   {
+    "chrom": "16",
+    "pos": 88841040,
+    "id": "873151",
+    "ref": "G",
+    "alt": "A",
+    "gene": "GALNS",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:253000",
+     "ORPHA:309297",
+     "ORPHA:582"
+    ]
+   }
+  ],
+  "disease": "OMIM:253000",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000280",
+   "HP:0012069",
+   "HP:0000943",
+   "HP:0003308",
+   "HP:0006532"
+  ],
+  "noisy": [
+   "HP:0001999",
+   "HP:0008155",
+   "HP:0011842",
+   "HP:0032153",
+   "HP:0002090",
+   "HP:0004326",
+   "HP:0002133"
+  ]
+ },
+ {
+  "case": "comphet_TBC1D24",
+  "type": "comphet",
+  "gene": "TBC1D24",
+  "variants": [
+   {
+    "chrom": "16",
+    "pos": 2500360,
+    "id": "2101220",
+    "ref": "C",
+    "alt": "CCCACTCAG",
+    "gene": "TBC1D24",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:308350",
+     "OMIM:616044",
+     "ORPHA:90635"
+    ]
+   },
+   {
+    "chrom": "16",
+    "pos": 2499367,
+    "id": "852959",
+    "ref": "C",
+    "alt": "T",
+    "gene": "TBC1D24",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:308350",
+     "OMIM:616044",
+     "ORPHA:90635"
+    ]
+   }
+  ],
+  "disease": "OMIM:605021",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0002373",
+   "HP:0001263",
+   "HP:0010546",
+   "HP:0001251",
+   "HP:0002070"
+  ],
+  "noisy": [
+   "HP:0002373",
+   "HP:0001263",
+   "HP:0100022",
+   "HP:0011443",
+   "HP:0002070",
+   "HP:0005110",
+   "HP:0000252"
+  ]
+ },
+ {
+  "case": "hom_TBC1D24",
+  "type": "hom",
+  "gene": "TBC1D24",
+  "variants": [
+   {
+    "chrom": "16",
+    "pos": 2496587,
+    "id": "48",
+    "ref": "G",
+    "alt": "C",
+    "gene": "TBC1D24",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:308350",
+     "OMIM:605021",
+     "OMIM:616044",
+     "ORPHA:352582",
+     "ORPHA:90635"
+    ]
+   }
+  ],
+  "disease": "OMIM:605021",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002070",
+   "HP:0002069",
+   "HP:0001263",
+   "HP:0002066",
+   "HP:0001260"
+  ],
+  "noisy": [
+   "HP:0002070",
+   "HP:0002069",
+   "HP:0001263",
+   "HP:0001251",
+   "HP:0001260",
+   "HP:0008144",
+   "HP:0000407"
+  ]
+ },
+ {
+  "case": "het_AGO2",
+  "type": "het",
+  "gene": "AGO2",
+  "variants": [
+   {
+    "chrom": "8",
+    "pos": 140535487,
+    "id": "995794",
+    "ref": "C",
+    "alt": "T",
+    "gene": "AGO2",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:619149"
+    ]
+   }
+  ],
+  "disease": "OMIM:619149",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000486",
+   "HP:0004209",
+   "HP:0001647",
+   "HP:0000582",
+   "HP:0000689"
+  ],
+  "noisy": [
+   "HP:0000486",
+   "HP:0009179",
+   "HP:0031567",
+   "HP:0000582",
+   "HP:0000692",
+   "HP:0010318",
+   "HP:0001321"
+  ]
+ },
+ {
+  "case": "het_MKRN3",
+  "type": "het",
+  "gene": "MKRN3",
+  "variants": [
+   {
+    "chrom": "15",
+    "pos": 23566641,
+    "id": "3900268",
+    "ref": "AG",
+    "alt": "A",
+    "gene": "MKRN3",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:176270",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0001263",
+   "HP:0002236",
+   "HP:0000565",
+   "HP:0000708",
+   "HP:0000939"
+  ],
+  "noisy": [
+   "HP:0001263",
+   "HP:0010721",
+   "HP:0032012",
+   "HP:0000708",
+   "HP:0000939",
+   "HP:0001260",
+   "HP:0000651"
+  ]
+ },
+ {
+  "case": "het_SYT1",
+  "type": "het",
+  "gene": "SYT1",
+  "variants": [
+   {
+    "chrom": "12",
+    "pos": 79353617,
+    "id": "1686243",
+    "ref": "C",
+    "alt": "T",
+    "gene": "SYT1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:618218",
+     "ORPHA:522077"
+    ]
+   }
+  ],
+  "disease": "ORPHA:522077",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002353",
+   "HP:0002465",
+   "HP:0005876",
+   "HP:0010850",
+   "HP:0000817"
+  ],
+  "noisy": [
+   "HP:0002353",
+   "HP:0002167",
+   "HP:0005876",
+   "HP:0011198",
+   "HP:0000817",
+   "HP:0032341",
+   "HP:0003016"
+  ]
+ },
+ {
+  "case": "het_GNA14",
+  "type": "het",
+  "gene": "GNA14",
+  "variants": [
+   {
+    "chrom": "9",
+    "pos": 77429016,
+    "id": "548667",
+    "ref": "T",
+    "alt": "A",
+    "gene": "GNA14",
+    "kind": "missense",
+    "diseases": [
+     "ORPHA:2122"
+    ]
+   }
+  ],
+  "disease": "ORPHA:2122",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0030350",
+   "HP:0000975",
+   "HP:0005520",
+   "HP:0000998",
+   "HP:0012531"
+  ],
+  "noisy": [
+   "HP:0030350",
+   "HP:0007550",
+   "HP:0005521",
+   "HP:0011362",
+   "HP:0012531",
+   "HP:0000648",
+   "HP:0007773"
+  ]
+ },
+ {
+  "case": "het_AUTS2",
+  "type": "het",
+  "gene": "AUTS2",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 70763028,
+    "id": "666574",
+    "ref": "C",
+    "alt": "T",
+    "gene": "AUTS2",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:615834",
+     "ORPHA:352490"
+    ]
+   }
+  ],
+  "disease": "OMIM:615834",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000248",
+   "HP:0010862",
+   "HP:0000347",
+   "HP:0025112",
+   "HP:0002002"
+  ],
+  "noisy": [
+   "HP:0000248",
+   "HP:0010862",
+   "HP:0000347",
+   "HP:0025112",
+   "HP:0000288",
+   "HP:0030680",
+   "HP:0100633"
+  ]
+ },
+ {
+  "case": "het_PSTPIP1",
+  "type": "het",
+  "gene": "PSTPIP1",
+  "variants": [
+   {
+    "chrom": "15",
+    "pos": 77032304,
+    "id": "97810",
+    "ref": "G",
+    "alt": "A",
+    "gene": "PSTPIP1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:601979",
+     "OMIM:604416",
+     "ORPHA:251523",
+     "ORPHA:69126"
+    ]
+   }
+  ],
+  "disease": "OMIM:604416",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0100658",
+   "HP:0002583",
+   "HP:0025616",
+   "HP:0001061",
+   "HP:0011227"
+  ],
+  "noisy": [
+   "HP:0003549",
+   "HP:0002583",
+   "HP:0025615",
+   "HP:0011123",
+   "HP:0011227",
+   "HP:0002650"
+  ]
+ },
+ {
+  "case": "het_KCNC1",
+  "type": "het",
+  "gene": "KCNC1",
+  "variants": [
+   {
+    "chrom": "11",
+    "pos": 17772384,
+    "id": "3365213",
+    "ref": "G",
+    "alt": "A",
+    "gene": "KCNC1",
+    "kind": "missense",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:616187",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0001268",
+   "HP:0001251",
+   "HP:0011198",
+   "HP:0001337",
+   "HP:0001336"
+  ],
+  "noisy": [
+   "HP:0001268",
+   "HP:0001251",
+   "HP:0011198",
+   "HP:0001337",
+   "HP:0001336"
+  ]
+ },
+ {
+  "case": "het_TTR",
+  "type": "het",
+  "gene": "TTR",
+  "variants": [
+   {
+    "chrom": "18",
+    "pos": 31595242,
+    "id": "853918",
+    "ref": "A",
+    "alt": "G",
+    "gene": "TTR",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:105210",
+     "OMIM:PS105210",
+     "ORPHA:271861",
+     "ORPHA:85447",
+     "ORPHA:85451"
+    ]
+   }
+  ],
+  "disease": "OMIM:105210",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0012332",
+   "HP:0001324",
+   "HP:0002078",
+   "HP:0001289",
+   "HP:0003477"
+  ],
+  "noisy": [
+   "HP:0002270",
+   "HP:0011804",
+   "HP:0002078",
+   "HP:0100543",
+   "HP:0000764",
+   "HP:0000486",
+   "HP:0000396"
+  ]
+ },
+ {
+  "case": "het_SMARCA2",
+  "type": "het",
+  "gene": "SMARCA2",
+  "variants": [
+   {
+    "chrom": "9",
+    "pos": 2110275,
+    "id": "810345",
+    "ref": "G",
+    "alt": "T",
+    "gene": "SMARCA2",
+    "kind": "missense",
+    "diseases": []
+   }
+  ],
+  "disease": "ORPHA:3051",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0000446",
+   "HP:0008070",
+   "HP:0009836",
+   "HP:0005916",
+   "HP:0001167"
+  ],
+  "noisy": [
+   "HP:0000422",
+   "HP:0008070",
+   "HP:0009768",
+   "HP:0040070",
+   "HP:0011297",
+   "HP:0000767",
+   "HP:0011471"
+  ]
+ },
+ {
+  "case": "het_RPL5",
+  "type": "het",
+  "gene": "RPL5",
+  "variants": [
+   {
+    "chrom": "1",
+    "pos": 92832118,
+    "id": "1803120",
+    "ref": "G",
+    "alt": "A",
+    "gene": "RPL5",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:612561",
+     "OMIM:PS105650",
+     "ORPHA:124"
+    ]
+   }
+  ],
+  "disease": "ORPHA:124",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000218",
+   "HP:0000185",
+   "HP:0000980",
+   "HP:0001875",
+   "HP:0002817"
+  ],
+  "noisy": [
+   "HP:0000218",
+   "HP:0000185",
+   "HP:0011121",
+   "HP:0001875",
+   "HP:0002817",
+   "HP:0007427",
+   "HP:0002561"
+  ]
+ },
+ {
+  "case": "het_CLCN3",
+  "type": "het",
+  "gene": "CLCN3",
+  "variants": [
+   {
+    "chrom": "4",
+    "pos": 169706936,
+    "id": "2574683",
+    "ref": "A",
+    "alt": "G",
+    "gene": "CLCN3",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:619512"
+    ]
+   }
+  ],
+  "disease": "OMIM:619512",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0012520",
+   "HP:0000752",
+   "HP:0000303",
+   "HP:0001508",
+   "HP:0000601"
+  ],
+  "noisy": [
+   "HP:0100659",
+   "HP:0000752",
+   "HP:0000306",
+   "HP:0004325",
+   "HP:0000601",
+   "HP:0000546",
+   "HP:0002650"
+  ]
+ },
+ {
+  "case": "het_KCNB1",
+  "type": "het",
+  "gene": "KCNB1",
+  "variants": [
+   {
+    "chrom": "20",
+    "pos": 49374623,
+    "id": "3236683",
+    "ref": "G",
+    "alt": "T",
+    "gene": "KCNB1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:616056",
+     "ORPHA:442835"
+    ]
+   }
+  ],
+  "disease": "OMIM:616056",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001252",
+   "HP:0001263",
+   "HP:0200134",
+   "HP:0012171",
+   "HP:0002069"
+  ],
+  "noisy": [
+   "HP:0003808",
+   "HP:0001263",
+   "HP:0200134",
+   "HP:5200009",
+   "HP:0001250",
+   "HP:0000316",
+   "HP:0031013"
+  ]
+ },
+ {
+  "case": "het_NACC1",
+  "type": "het",
+  "gene": "NACC1",
+  "variants": [
+   {
+    "chrom": "19",
+    "pos": 13136099,
+    "id": "417784",
+    "ref": "C",
+    "alt": "T",
+    "gene": "NACC1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:617393",
+     "ORPHA:500545"
+    ]
+   }
+  ],
+  "disease": "OMIM:617393",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001263",
+   "HP:0005484",
+   "HP:0002188",
+   "HP:0001344",
+   "HP:0000455"
+  ],
+  "noisy": [
+   "HP:0012758",
+   "HP:0005484",
+   "HP:0002188",
+   "HP:0001344",
+   "HP:0000455",
+   "HP:0000589",
+   "HP:0011800"
+  ]
+ },
+ {
+  "case": "het_MAST1",
+  "type": "het",
+  "gene": "MAST1",
+  "variants": [
+   {
+    "chrom": "19",
+    "pos": 12873687,
+    "id": "2580895",
+    "ref": "C",
+    "alt": "T",
+    "gene": "MAST1",
+    "kind": "missense",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:618273",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0001263",
+   "HP:0000657",
+   "HP:0004322",
+   "HP:0001290",
+   "HP:0001321"
+  ],
+  "noisy": [
+   "HP:0001263",
+   "HP:0000657",
+   "HP:0000002",
+   "HP:0001252",
+   "HP:0007360",
+   "HP:0200151"
+  ]
+ },
+ {
+  "case": "het_PPP1R12A",
+  "type": "het",
+  "gene": "PPP1R12A",
+  "variants": [
+   {
+    "chrom": "12",
+    "pos": 79788752,
+    "id": "976721",
+    "ref": "G",
+    "alt": "A",
+    "gene": "PPP1R12A",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:618820"
+    ]
+   }
+  ],
+  "disease": "OMIM:618820",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0007018",
+   "HP:0012368",
+   "HP:0000343",
+   "HP:0000133",
+   "HP:0002751"
+  ],
+  "noisy": [
+   "HP:0000752",
+   "HP:0012368",
+   "HP:0000343",
+   "HP:0000812",
+   "HP:0002751",
+   "HP:0003270",
+   "HP:0003555"
+  ]
+ },
+ {
+  "case": "het_KCNA1",
+  "type": "het",
+  "gene": "KCNA1",
+  "variants": [
+   {
+    "chrom": "12",
+    "pos": 4912163,
+    "id": "1698514",
+    "ref": "T",
+    "alt": "C",
+    "gene": "KCNA1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:160120",
+     "ORPHA:37612",
+     "ORPHA:972"
+    ]
+   }
+  ],
+  "disease": "ORPHA:37612",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002312",
+   "HP:0000750",
+   "HP:0003394",
+   "HP:0005461",
+   "HP:0001272"
+  ],
+  "noisy": [
+   "HP:0011443",
+   "HP:0012758",
+   "HP:0011804",
+   "HP:0005461",
+   "HP:0001317",
+   "HP:0002550",
+   "HP:0001638"
+  ]
+ },
+ {
+  "case": "het_MYL3",
+  "type": "het",
+  "gene": "MYL3",
+  "variants": [
+   {
+    "chrom": "3",
+    "pos": 46859509,
+    "id": "181444",
+    "ref": "C",
+    "alt": "A",
+    "gene": "MYL3",
+    "kind": "missense",
+    "diseases": [
+     "ORPHA:217569"
+    ]
+   }
+  ],
+  "disease": "OMIM:608751",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0001663",
+   "HP:0001723",
+   "HP:0031295",
+   "HP:0001639",
+   "HP:0001712"
+  ],
+  "noisy": [
+   "HP:0001663",
+   "HP:0001723",
+   "HP:0025579",
+   "HP:0001638",
+   "HP:0001712",
+   "HP:0000347",
+   "HP:0001945"
+  ]
+ },
+ {
+  "case": "het_DPF2",
+  "type": "het",
+  "gene": "DPF2",
+  "variants": [
+   {
+    "chrom": "11",
+    "pos": 65346059,
+    "id": "985019",
+    "ref": "G",
+    "alt": "A",
+    "gene": "DPF2",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:618027",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0000289",
+   "HP:0001249",
+   "HP:0002714",
+   "HP:0004322",
+   "HP:0000403"
+  ],
+  "noisy": [
+   "HP:0000289",
+   "HP:0001249",
+   "HP:0011338",
+   "HP:0004322",
+   "HP:0000403",
+   "HP:0002027",
+   "HP:0000473"
+  ]
+ },
+ {
+  "case": "het_RPS17",
+  "type": "het",
+  "gene": "RPS17",
+  "variants": [
+   {
+    "chrom": "15",
+    "pos": 82540428,
+    "id": "1784170",
+    "ref": "T",
+    "alt": "C",
+    "gene": "RPS17",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:612527",
+     "OMIM:PS105650",
+     "ORPHA:124"
+    ]
+   }
+  ],
+  "disease": "OMIM:612527",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001972",
+   "HP:0001999",
+   "HP:0001875",
+   "HP:0001510",
+   "HP:0004322"
+  ],
+  "noisy": [
+   "HP:0001972",
+   "HP:0001999",
+   "HP:0001875",
+   "HP:0001507",
+   "HP:0001510",
+   "HP:0002266",
+   "HP:0004322"
+  ]
+ },
+ {
+  "case": "het_PKP2",
+  "type": "het",
+  "gene": "PKP2",
+  "variants": [
+   {
+    "chrom": "12",
+    "pos": 32824090,
+    "id": "45046",
+    "ref": "GA",
+    "alt": "G",
+    "gene": "PKP2",
+    "kind": "lof",
+    "diseases": [
+     "ORPHA:247"
+    ]
+   }
+  ],
+  "disease": "OMIM:609040",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0004756",
+   "HP:0006677",
+   "HP:0001279",
+   "HP:0001695",
+   "HP:0006698"
+  ],
+  "noisy": [
+   "HP:0004756",
+   "HP:0006677",
+   "HP:0001279",
+   "HP:0001695",
+   "HP:0006698",
+   "HP:0001762",
+   "HP:0100751"
+  ]
+ },
+ {
+  "case": "het_KMT2D",
+  "type": "het",
+  "gene": "KMT2D",
+  "variants": [
+   {
+    "chrom": "12",
+    "pos": 49039741,
+    "id": "547451",
+    "ref": "GCT",
+    "alt": "G",
+    "gene": "KMT2D",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:147920",
+     "ORPHA:2322"
+    ]
+   }
+  ],
+  "disease": "OMIM:147920",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0006870",
+   "HP:0000506",
+   "HP:0001643",
+   "HP:0001878",
+   "HP:0003510"
+  ],
+  "noisy": [
+   "HP:0001360",
+   "HP:0000492",
+   "HP:0001643",
+   "HP:0011895",
+   "HP:0003508",
+   "HP:0002650",
+   "HP:0001053"
+  ]
+ },
+ {
+  "case": "het_BRD4",
+  "type": "het",
+  "gene": "BRD4",
+  "variants": [
+   {
+    "chrom": "19",
+    "pos": 15263472,
+    "id": "2443328",
+    "ref": "T",
+    "alt": "C",
+    "gene": "BRD4",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:620568"
+    ]
+   }
+  ],
+  "disease": "OMIM:620568",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002236",
+   "HP:0000369",
+   "HP:0004209",
+   "HP:0000664",
+   "HP:0000316"
+  ],
+  "noisy": [
+   "HP:0002236",
+   "HP:0000369",
+   "HP:0004209",
+   "HP:0000534",
+   "HP:0100886",
+   "HP:0002110",
+   "HP:0001841"
+  ]
+ },
+ {
+  "case": "het_SMARCC2",
+  "type": "het",
+  "gene": "SMARCC2",
+  "variants": [
+   {
+    "chrom": "12",
+    "pos": 56178096,
+    "id": "623248",
+    "ref": "G",
+    "alt": "C",
+    "gene": "SMARCC2",
+    "kind": "other",
+    "diseases": [
+     "OMIM:618362"
+    ]
+   }
+  ],
+  "disease": "OMIM:618362",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000463",
+   "HP:0000028",
+   "HP:0000574",
+   "HP:0001252",
+   "HP:0000527"
+  ],
+  "noisy": [
+   "HP:0000463",
+   "HP:0000035",
+   "HP:0000534",
+   "HP:0003808",
+   "HP:0000499",
+   "HP:0001692",
+   "HP:0001763"
+  ]
+ },
+ {
+  "case": "het_RPL26",
+  "type": "het",
+  "gene": "RPL26",
+  "variants": [
+   {
+    "chrom": "17",
+    "pos": 8382317,
+    "id": "2627099",
+    "ref": "T",
+    "alt": "C",
+    "gene": "RPL26",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:614900",
+     "ORPHA:124"
+    ]
+   }
+  ],
+  "disease": "OMIM:614900",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0012139",
+   "HP:0001875",
+   "HP:0100337",
+   "HP:0002974",
+   "HP:0000122"
+  ],
+  "noisy": [
+   "HP:0012139",
+   "HP:0011991",
+   "HP:0100337",
+   "HP:0002818",
+   "HP:0000122",
+   "HP:0000389"
+  ]
+ },
+ {
+  "case": "het_THAP1",
+  "type": "het",
+  "gene": "THAP1",
+  "variants": [
+   {
+    "chrom": "8",
+    "pos": 42839376,
+    "id": "846905",
+    "ref": "G",
+    "alt": "A",
+    "gene": "THAP1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:602629",
+     "ORPHA:98806"
+    ]
+   }
+  ],
+  "disease": "OMIM:602629",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0012048",
+   "HP:0031008",
+   "HP:0001336",
+   "HP:0002356",
+   "HP:0001260"
+  ],
+  "noisy": [
+   "HP:0012179",
+   "HP:0004305",
+   "HP:0002356",
+   "HP:0001260",
+   "HP:0001635",
+   "HP:0002033"
+  ]
+ },
+ {
+  "case": "het_SMARCE1",
+  "type": "het",
+  "gene": "SMARCE1",
+  "variants": [
+   {
+    "chrom": "17",
+    "pos": 40632236,
+    "id": "1755184",
+    "ref": "G",
+    "alt": "A",
+    "gene": "SMARCE1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:607174",
+     "ORPHA:140162",
+     "ORPHA:263662"
+    ]
+   }
+  ],
+  "disease": "OMIM:616938",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0001263",
+   "HP:0000508",
+   "HP:0000527",
+   "HP:0001250",
+   "HP:0001249"
+  ],
+  "noisy": [
+   "HP:0012758",
+   "HP:0012373",
+   "HP:0000499",
+   "HP:0012638",
+   "HP:0011446",
+   "HP:0002651",
+   "HP:0001945"
+  ]
+ },
+ {
+  "case": "het_KCTD17",
+  "type": "het",
+  "gene": "KCTD17",
+  "variants": [
+   {
+    "chrom": "22",
+    "pos": 37057420,
+    "id": "191372",
+    "ref": "G",
+    "alt": "A",
+    "gene": "KCTD17",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:616398"
+    ]
+   }
+  ],
+  "disease": "OMIM:616398",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000473",
+   "HP:0001336",
+   "HP:0001618",
+   "HP:0000716",
+   "HP:0000643"
+  ],
+  "noisy": [
+   "HP:0000473",
+   "HP:0001336",
+   "HP:0001608",
+   "HP:0100851",
+   "HP:0000643",
+   "HP:0000431",
+   "HP:0002359"
+  ]
+ },
+ {
+  "case": "het_UMOD",
+  "type": "het",
+  "gene": "UMOD",
+  "variants": [
+   {
+    "chrom": "16",
+    "pos": 20348447,
+    "id": "988177",
+    "ref": "G",
+    "alt": "T",
+    "gene": "UMOD",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:162000",
+     "ORPHA:209886",
+     "ORPHA:34149",
+     "ORPHA:88950"
+    ]
+   }
+  ],
+  "disease": "OMIM:162000",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002149",
+   "HP:0012623",
+   "HP:0000107",
+   "HP:0000083",
+   "HP:0003774"
+  ],
+  "noisy": [
+   "HP:0002149",
+   "HP:0012623",
+   "HP:0000107",
+   "HP:0000083",
+   "HP:0003774",
+   "HP:0001769",
+   "HP:0002354"
+  ]
+ },
+ {
+  "case": "het_EHMT1",
+  "type": "het",
+  "gene": "EHMT1",
+  "variants": [
+   {
+    "chrom": "9",
+    "pos": 137834397,
+    "id": "65737",
+    "ref": "C",
+    "alt": "T",
+    "gene": "EHMT1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:610253",
+     "ORPHA:261494"
+    ]
+   }
+  ],
+  "disease": "OMIM:610253",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000717",
+   "HP:0000742",
+   "HP:0010806",
+   "HP:0001763",
+   "HP:0000709"
+  ],
+  "noisy": [
+   "HP:0000717",
+   "HP:0000742",
+   "HP:0011339",
+   "HP:0001760",
+   "HP:5200430",
+   "HP:0000147"
+  ]
+ },
+ {
+  "case": "het_ZNF462",
+  "type": "het",
+  "gene": "ZNF462",
+  "variants": [
+   {
+    "chrom": "9",
+    "pos": 106927561,
+    "id": "992286",
+    "ref": "C",
+    "alt": "T",
+    "gene": "ZNF462",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:618619",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0000286",
+   "HP:0000463",
+   "HP:0000411",
+   "HP:0000365",
+   "HP:0000369"
+  ],
+  "noisy": [
+   "HP:0000492",
+   "HP:0000429",
+   "HP:0000411",
+   "HP:0000365",
+   "HP:0000357",
+   "HP:0000426"
+  ]
+ },
+ {
+  "case": "het_DNAJB11",
+  "type": "het",
+  "gene": "DNAJB11",
+  "variants": [
+   {
+    "chrom": "3",
+    "pos": 186577774,
+    "id": "972873",
+    "ref": "G",
+    "alt": "T",
+    "gene": "DNAJB11",
+    "kind": "lof",
+    "diseases": [
+     "ORPHA:730"
+    ]
+   }
+  ],
+  "disease": "ORPHA:730",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000083",
+   "HP:0000105",
+   "HP:0000790",
+   "HP:0001407",
+   "HP:0002616"
+  ],
+  "noisy": [
+   "HP:0012211",
+   "HP:0012210",
+   "HP:0000790",
+   "HP:0001407",
+   "HP:0002616",
+   "HP:0000143",
+   "HP:0000846"
+  ]
+ },
+ {
+  "case": "het_BAG3",
+  "type": "het",
+  "gene": "BAG3",
+  "variants": [
+   {
+    "chrom": "10",
+    "pos": 119676479,
+    "id": "228322",
+    "ref": "C",
+    "alt": "T",
+    "gene": "BAG3",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:612954",
+     "OMIM:613881",
+     "OMIM:PS115200",
+     "ORPHA:154",
+     "ORPHA:199340",
+     "ORPHA:217604",
+     "ORPHA:217607"
+    ]
+   }
+  ],
+  "disease": "OMIM:612954",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0003701",
+   "HP:0003458",
+   "HP:0003715",
+   "HP:0001723",
+   "HP:0002091"
+  ],
+  "noisy": [
+   "HP:0003701",
+   "HP:0003457",
+   "HP:0003198",
+   "HP:0001723",
+   "HP:0002091",
+   "HP:0002240",
+   "HP:0001251"
+  ]
+ },
+ {
+  "case": "het_NR2F2",
+  "type": "het",
+  "gene": "NR2F2",
+  "variants": [
+   {
+    "chrom": "15",
+    "pos": 96337399,
+    "id": "128232",
+    "ref": "C",
+    "alt": "A",
+    "gene": "NR2F2",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:615779"
+    ]
+   }
+  ],
+  "disease": "OMIM:615779",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001680",
+   "HP:0004383",
+   "HP:0001629",
+   "HP:0001636",
+   "HP:0032092"
+  ],
+  "noisy": [
+   "HP:0001679",
+   "HP:0045017",
+   "HP:0010438",
+   "HP:0001710",
+   "HP:0032092",
+   "HP:0001537"
+  ]
+ },
+ {
+  "case": "het_BCL11B",
+  "type": "het",
+  "gene": "BCL11B",
+  "variants": [
+   {
+    "chrom": "14",
+    "pos": 99174374,
+    "id": "1292051",
+    "ref": "T",
+    "alt": "TCGCCGGTGTGGCTC",
+    "gene": "BCL11B",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:617237",
+     "OMIM:618092",
+     "ORPHA:662829"
+    ]
+   }
+  ],
+  "disease": "OMIM:617237",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0012745",
+   "HP:0000582",
+   "HP:0410378",
+   "HP:0031545",
+   "HP:0000322"
+  ],
+  "noisy": [
+   "HP:0200007",
+   "HP:0000582",
+   "HP:0410378",
+   "HP:0031545",
+   "HP:0000322",
+   "HP:0001397",
+   "HP:0001162"
+  ]
+ },
+ {
+  "case": "het_SGCE",
+  "type": "het",
+  "gene": "SGCE",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 94655989,
+    "id": "1069379",
+    "ref": "C",
+    "alt": "T",
+    "gene": "SGCE",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:159900",
+     "ORPHA:36899"
+    ]
+   }
+  ],
+  "disease": "ORPHA:36899",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000473",
+   "HP:0000716",
+   "HP:0000722",
+   "HP:0000739",
+   "HP:0010531"
+  ],
+  "noisy": [
+   "HP:0011006",
+   "HP:0000716",
+   "HP:5200241",
+   "HP:0000739",
+   "HP:0001336",
+   "HP:0000752",
+   "HP:0000612"
+  ]
+ },
+ {
+  "case": "het_DLL1",
+  "type": "het",
+  "gene": "DLL1",
+  "variants": [
+   {
+    "chrom": "6",
+    "pos": 170283464,
+    "id": "2503482",
+    "ref": "GCTGA",
+    "alt": "G",
+    "gene": "DLL1",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:618709"
+    ]
+   }
+  ],
+  "disease": "OMIM:618709",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0000729",
+   "HP:0000256",
+   "HP:0001263",
+   "HP:0000252",
+   "HP:0001999"
+  ],
+  "noisy": [
+   "HP:0025783",
+   "HP:0040194",
+   "HP:0001263",
+   "HP:0040195",
+   "HP:0000271",
+   "HP:0003701",
+   "HP:0000194"
+  ]
+ },
+ {
+  "case": "het_EPAS1",
+  "type": "het",
+  "gene": "EPAS1",
+  "variants": [
+   {
+    "chrom": "2",
+    "pos": 46380281,
+    "id": "6469",
+    "ref": "G",
+    "alt": "A",
+    "gene": "EPAS1",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:611783",
+     "ORPHA:247511"
+    ]
+   }
+  ],
+  "disease": "OMIM:611783",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0033644",
+   "HP:0001901",
+   "HP:0001900",
+   "HP:0002625",
+   "HP:0001899"
+  ],
+  "noisy": [
+   "HP:0033644",
+   "HP:0001877",
+   "HP:0001901",
+   "HP:0004936",
+   "HP:0001899",
+   "HP:0000545",
+   "HP:0001829"
+  ]
+ },
+ {
+  "case": "het_PRPF31",
+  "type": "het",
+  "gene": "PRPF31",
+  "variants": [
+   {
+    "chrom": "19",
+    "pos": 54128166,
+    "id": "866533",
+    "ref": "CT",
+    "alt": "C",
+    "gene": "PRPF31",
+    "kind": "lof",
+    "diseases": []
+   }
+  ],
+  "disease": "OMIM:600138",
+  "disease_matches_clinvar": false,
+  "exact": [
+   "HP:0007663",
+   "HP:0000618",
+   "HP:0007401",
+   "HP:0007737",
+   "HP:0000510"
+  ],
+  "noisy": [
+   "HP:0000505",
+   "HP:0007663",
+   "HP:0000608",
+   "HP:0000580",
+   "HP:0000510",
+   "HP:0001537",
+   "HP:0010864"
+  ]
+ },
+ {
+  "case": "het_TNPO3",
+  "type": "het",
+  "gene": "TNPO3",
+  "variants": [
+   {
+    "chrom": "7",
+    "pos": 128957259,
+    "id": "591000",
+    "ref": "CG",
+    "alt": "C",
+    "gene": "TNPO3",
+    "kind": "lof",
+    "diseases": [
+     "OMIM:608423",
+     "OMIM:PS603511",
+     "ORPHA:102014",
+     "ORPHA:55595"
+    ]
+   }
+  ],
+  "disease": "OMIM:608423",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0002015",
+   "HP:0003749",
+   "HP:0009046",
+   "HP:0034392",
+   "HP:0003687"
+  ],
+  "noisy": [
+   "HP:0002015",
+   "HP:0003325",
+   "HP:0004302",
+   "HP:0034392",
+   "HP:0004303",
+   "HP:0001279",
+   "HP:0001937"
+  ]
+ },
+ {
+  "case": "het_FGF8",
+  "type": "het",
+  "gene": "FGF8",
+  "variants": [
+   {
+    "chrom": "10",
+    "pos": 101771551,
+    "id": "235081",
+    "ref": "G",
+    "alt": "A",
+    "gene": "FGF8",
+    "kind": "missense",
+    "diseases": [
+     "OMIM:612702",
+     "OMIM:PS236100",
+     "ORPHA:2162",
+     "ORPHA:220386",
+     "ORPHA:478"
+    ]
+   }
+  ],
+  "disease": "ORPHA:220386",
+  "disease_matches_clinvar": true,
+  "exact": [
+   "HP:0001371",
+   "HP:0000238",
+   "HP:0001274",
+   "HP:0002871",
+   "HP:0000737"
+  ],
+  "noisy": [
+   "HP:0034392",
+   "HP:0000238",
+   "HP:0007370",
+   "HP:0002871",
+   "HP:0000737",
+   "HP:0007256",
+   "HP:0008997"
+  ]
+ }
+]

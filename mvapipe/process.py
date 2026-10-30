@@ -11,14 +11,18 @@ else:
     PROCESS_FLAGS = 0
 
 
-class Command_error(RuntimeError):
+class CommandError(RuntimeError):
     pass
 
 
 def run_pipeline(
     commands: Sequence[Command], *, log_path: Path, stdout: BinaryIO | None = None
 ) -> None:
-    """Pipe commands together and fail if any command fails."""
+    """Run a command pipeline and append stderr to the log.
+
+    Send the final command's stdout to `stdout`, or to the log if None. Raise
+    CommandError if any command exits with a nonzero status.
+    """
     with log_path.open("ab") as log:
         processes: list[subprocess.Popen[bytes]] = []
         try:
@@ -52,11 +56,7 @@ def run_pipeline(
     ]
     if failures:
         message = f"{'; '.join(failures)}; see {log_path}"
-        raise Command_error(message)
-
-
-def run(command: Command, *, log_path: Path) -> None:
-    run_pipeline([command], log_path=log_path)
+        raise CommandError(message)
 
 
 def capture(command: Command) -> str:

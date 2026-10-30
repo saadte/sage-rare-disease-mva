@@ -14,6 +14,8 @@ TERM_ID_PATTERN = re.compile(r"HP:\d{7}")
 
 
 class Ontology:
+    """HPO terms, parent relationships and alternate IDs loaded from an OBO file."""
+
     def __init__(self, obo_path: Path) -> None:
         self.term_names: dict[str, str] = {}
         self.parents: dict[str, set[str]] = defaultdict(set)
@@ -48,14 +50,17 @@ class Ontology:
                     self._obsolete_terms.add(term)
 
     def resolve(self, term: str) -> str | None:
-        """Resolve alternate IDs to current, non-obsolete terms."""
+        """Resolve a primary or alternate HPO ID to its current primary ID.
+
+        Return None when the term is unknown or obsolete.
+        """
         primary = self._primary_ids.get(term, term)
         if primary in self.term_names and primary not in self._obsolete_terms:
             return primary
         return None
 
     def ancestors(self, term: str) -> frozenset[str]:
-        """Include the term itself."""
+        """Return the term and all its ancestors."""
         cached = self._ancestor_cache.get(term)
         if cached is not None:
             return cached
@@ -70,47 +75,50 @@ class Ontology:
         return self._ancestor_cache[term]
 
     def is_feature(self, term: str) -> bool:
+        """Check whether a term describes a patient feature.
+
+        Accept descendants of Phenotypic abnormality or Past medical history, excluding
+        the two branch roots.
+        """
         return term not in FEATURE_BRANCHES and not FEATURE_BRANCHES.isdisjoint(
             self.ancestors(term)
         )
 
-    def is_phenotypic_abnormality(self, term: str) -> bool:
-        return (
-            term != PHENOTYPIC_ABNORMALITY
-            and PHENOTYPIC_ABNORMALITY in self.ancestors(term)
-        )
-
 
 @dataclass(frozen=True)
-class Phenotype_match:
+class PhenotypeMatch:
     similarity: float
     disease: str | None
 
 
-NO_MATCH = Phenotype_match(similarity=0.0, disease=None)
+NO_MATCH = PhenotypeMatch(similarity=0.0, disease=None)
 
 
-class Phenotype_model:
-    """Mean normalised Resnik similarity for each gene's best matching disease."""
+class PhenotypeModel:
+    """Score genes by mean normalised Resnik similarity to their diseases."""
 
-    def __init__(self, obo_path: Path, genes_to_phenotype_path: Path) -> None:
+    def __init__(self, *, obo_path: Path, genes_to_phenotype_path: Path) -> None:
         self.ontology = Ontology(obo_path)
-        self.disease_terms: dict[str, dict[str, set[str]]] = defaultdict(
-            lambda: defaultdict(set)
-        )
-        self._load_annotations(genes_to_phenotype_path)
+        # Map gene symbols to disease IDs, then to current HPO terms.
+        self.disease_terms = self._load_annotations(genes_to_phenotype_path)
         self._information_content = self._compute_information_content()
         self._closure_cache: dict[tuple[str, str], frozenset[str]] = {}
 
-    def _load_annotations(self, genes_to_phenotype_path: Path) -> None:
+    def _load_annotations(
+        self, genes_to_phenotype_path: Path
+    ) -> dict[str, dict[str, set[str]]]:
+        disease_terms: defaultdict[str, defaultdict[str, set[str]]] = defaultdict(
+            lambda: defaultdict(set)
+        )
         with genes_to_phenotype_path.open(encoding="utf8", newline="") as annotations:
             for row in csv.DictReader(annotations, delimiter="\t"):
                 term = self.ontology.resolve(row["hpo_id"])
                 if term is not None:
-                    self.disease_terms[row["gene_symbol"]][row["disease_id"]].add(term)
+                    disease_terms[row["gene_symbol"]][row["disease_id"]].add(term)
+        return {gene: dict(diseases) for gene, diseases in disease_terms.items()}
 
     def _compute_information_content(self) -> dict[str, float]:
-        """-log of the fraction of genes annotated with the term or a descendant."""
+        """Compute -log of the gene frequency of each term, including descendants."""
         genes_of_term: dict[str, set[str]] = defaultdict(set)
         for gene, terms_of_disease in self.disease_terms.items():
             for terms in terms_of_disease.values():
@@ -123,7 +131,7 @@ class Phenotype_model:
             for term, genes in genes_of_term.items()
         }
 
-    def _closure(self, gene: str, disease: str) -> frozenset[str]:
+    def _compute_closure(self, gene: str, disease: str) -> frozenset[str]:
         cached = self._closure_cache.get((gene, disease))
         if cached is not None:
             return cached
@@ -133,24 +141,30 @@ class Phenotype_model:
         self._closure_cache[gene, disease] = frozenset(closure)
         return self._closure_cache[gene, disease]
 
-    def _maximum_information_content(self, terms: frozenset[str]) -> float:
+    def _find_maximum_information_content(self, terms: frozenset[str]) -> float:
         return max(
             (self._information_content.get(term, 0.0) for term in terms), default=0.0
         )
 
-    def gene_score(self, gene: str, patient_terms: Sequence[str]) -> Phenotype_match:
+    def score_gene(self, gene: str, patient_terms: Sequence[str]) -> PhenotypeMatch:
+        """Find the gene's disease with the highest similarity to the patient terms.
+
+        Return NO_MATCH if the gene has no annotated disease, the patient terms are empty
+        or every similarity is zero.
+        """
         if gene not in self.disease_terms or not patient_terms:
             return NO_MATCH
         patient = [
-            (ancestors, self._maximum_information_content(ancestors))
+            (ancestors, self._find_maximum_information_content(ancestors))
             for ancestors in map(self.ontology.ancestors, patient_terms)
         ]
         best = NO_MATCH
         for disease in self.disease_terms[gene]:
-            closure = self._closure(gene, disease)
+            closure = self._compute_closure(gene, disease)
             total = sum(
                 min(
-                    self._maximum_information_content(ancestors & closure) / information,
+                    self._find_maximum_information_content(ancestors & closure)
+                    / information,
                     1.0,
                 )
                 for ancestors, information in patient
@@ -158,22 +172,28 @@ class Phenotype_model:
             )
             similarity = total / len(patient)
             if similarity > best.similarity:
-                best = Phenotype_match(similarity=similarity, disease=disease)
+                best = PhenotypeMatch(similarity=similarity, disease=disease)
         return best
 
 
 def read_term_file(term_path: Path, ontology: Ontology) -> list[str]:
-    """One HPO id per line; text after the id is ignored and '#' starts a comment."""
+    """Read unique, current HPO patient features in file order.
+
+    Expect one HPO ID per line; ignore trailing text, '#' comments and blank lines.
+    Raise ValueError for an invalid feature or a file with no terms.
+    """
     terms: list[str] = []
     with term_path.open(encoding="utf8") as lines:
-        for number, raw_line in enumerate(lines, start=1):
+        for line_number, raw_line in enumerate(lines, start=1):
             line = raw_line.split("#", 1)[0].strip()
             if not line:
                 continue
             match = TERM_ID_PATTERN.match(line)
             term = ontology.resolve(match.group()) if match else None
             if term is None or not ontology.is_feature(term):
-                message = f"{term_path}, line {number}: not a current HPO patient feature"
+                message = (
+                    f"{term_path}, line {line_number}: not a current HPO patient feature"
+                )
                 raise ValueError(message)
             if term not in terms:
                 terms.append(term)

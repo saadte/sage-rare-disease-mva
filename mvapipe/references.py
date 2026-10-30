@@ -39,5 +39,25 @@ class References:
         return self.directory / "hpo" / "genes_to_phenotype.txt"
 
     @property
-    def manifest(self) -> Path:
-        return self.directory / "manifest.json"
+    def phenotype_annotations(self) -> Path:
+        return self.directory / "hpo" / "phenotype.hpoa"
+
+    @property
+    def gene_constraint(self) -> Path:
+        return self.directory / "gnomad" / "gnomad.v4.1.constraint_metrics.tsv"
+
+    @property
+    def phenopackets(self) -> Path:
+        return self.directory / "phenopackets" / "all_phenopackets.zip"
+
+    @property
+    def training_directory(self) -> Path:
+        return self.directory / "phenopackets" / "annotation"
+
+    @property
+    def training_alleles(self) -> Path:
+        return self.training_directory / "variants.tsv.gz"
+
+    @property
+    def gene_folds(self) -> Path:
+        return self.directory / "phenopackets" / "gene_folds.tsv"

@@ -18,7 +18,8 @@ work/
 runs/
 *.csv
 ranked.*.tsv
-manifest.*.json
+posterior.*.tsv
+set.*.tsv
 
 # Phenotype terms
 *terms*.txt
@@ -27,26 +28,22 @@ manifest.*.json
 .env
 *token*
 
-# Public benchmark data is kept
-!benchmark/**
-
 # Selected submission findings and reviewed HPO codes
 !submission/nadia_mvapipe.csv
 !submission/hpo.txt
 
-# Tests and development tooling
-tests/
-.github/
-pyproject.toml
-.shellcheckrc
-scripts/fetch_challenge_vcf.sh
-
-# Held back until after the first submission
-benchmark/
-tools/
+# Not published
+benchmark/*
+!benchmark/*.py
+!benchmark/README.md
+!benchmark/cases.json
+!benchmark/published_results.json
+tools/*
+!tools/__init__.py
+!tools/extract_terms.py
+!tools/reduce_table.py
 scripts/
 CITATION.cff
-config/README.md
 submission/references.json
 
 # Caches
