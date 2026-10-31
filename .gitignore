@@ -33,6 +33,7 @@ set.*.tsv
 !submission/hpo.txt
 
 # Not published
+tests/
 benchmark/*
 !benchmark/*.py
 !benchmark/README.md

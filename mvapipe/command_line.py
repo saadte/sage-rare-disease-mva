@@ -1,10 +1,12 @@
 import argparse
+import json
 import os
 from collections.abc import Callable, Sequence
+from fractions import Fraction
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from mvapipe import submission
+from mvapipe import conformal, submission
 from mvapipe.frequency import FrequencyMode, add_matched_frequencies
 from mvapipe.gene_validity import GeneValidity, load_gene_validity
 from mvapipe.ontology import PhenotypeModel, read_term_file
@@ -49,6 +51,8 @@ class _Arguments(argparse.Namespace):
     label: str | None
     thread_count: int
     min_relative_score: float
+    calibration_scores: Path | None
+    coverage: Fraction
     predictions: Path
     frequency_mode: str
     use_quality: bool
@@ -88,6 +92,18 @@ def _parse_probability(value: str) -> float:
     return number
 
 
+def _parse_coverage(value: str) -> Fraction:
+    try:
+        number = Fraction(value)
+    except (ValueError, ZeroDivisionError) as error:
+        message = "must be a fraction strictly between 0 and 1"
+        raise argparse.ArgumentTypeError(message) from error
+    if not 0 < number < 1:
+        message = "must be strictly between 0 and 1"
+        raise argparse.ArgumentTypeError(message)
+    return number
+
+
 def _add_thread_argument(parser: argparse.ArgumentParser) -> None:
     cpu_count = os.cpu_count()
     parser.add_argument(
@@ -103,15 +119,15 @@ def main(arguments: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="mvapipe")
     commands = parser.add_subparsers(required=True, metavar="COMMAND")
 
-    run = commands.add_parser("run", help="rank a sample's variants; write predictions")
+    run = commands.add_parser("run", help="rank variants and write Track 1 predictions")
     source = run.add_mutually_exclusive_group(required=True)
     source.add_argument("--vcf", type=Path)
-    source.add_argument("--table", type=Path, help="variants.tsv.gz of an earlier run")
-    phenotype = run.add_mutually_exclusive_group(required=True)
-    phenotype.add_argument("--hpo", type=Path, help="file with one HPO id per line")
-    phenotype.add_argument(
-        "--blind", action="store_true", help="rank without a phenotype"
+    source.add_argument(
+        "--table", type=Path, help="reuse variants.tsv.gz from a prior run"
     )
+    phenotype = run.add_mutually_exclusive_group(required=True)
+    phenotype.add_argument("--hpo", type=Path, help="file with one HPO ID per line")
+    phenotype.add_argument("--blind", action="store_true", help="rank without HPO terms")
     run.add_argument(
         "--method",
         choices=METHODS,
@@ -137,7 +153,8 @@ def main(arguments: Sequence[str] | None = None) -> int:
         help="annotated causal alleles with matched frequencies",
     )
     run.add_argument("--gene-folds", type=Path, help="TSV of fixed gene/fold assignments")
-    run.add_argument(
+    cutoff = run.add_mutually_exclusive_group()
+    cutoff.add_argument(
         "--calibration-probabilities",
         type=Path,
         help="CSV of held-out truth probabilities for a conformal candidate set",
@@ -149,11 +166,22 @@ def main(arguments: Sequence[str] | None = None) -> int:
         "--label", help="name of the output files (default: phenotype, blind)"
     )
     _add_thread_argument(run)
-    run.add_argument(
+    cutoff.add_argument(
         "--min-relative-score",
         type=_parse_score_fraction,
         default=0.0,
-        help="after the best candidate, write only those scoring this fraction of it",
+        help="minimum fraction of the best score for additional rows (default: 0)",
+    )
+    cutoff.add_argument(
+        "--calibration-scores",
+        type=Path,
+        help="file with one true candidate score per benchmark case; score method only",
+    )
+    run.add_argument(
+        "--coverage",
+        type=_parse_coverage,
+        default=Fraction("0.9"),
+        help="target coverage with --calibration-scores, before the ten-row limit",
     )
     run.set_defaults(handler=_run)
 
@@ -192,6 +220,12 @@ def main(arguments: Sequence[str] | None = None) -> int:
 
 
 def _run(arguments: _Arguments) -> int:
+    if arguments.calibration_scores is not None and arguments.method != "score":
+        message = "--calibration-scores requires --method score"
+        raise ValueError(message)
+    if arguments.calibration_scores is None and arguments.coverage != Fraction("0.9"):
+        message = "--coverage requires --calibration-scores"
+        raise ValueError(message)
     if arguments.method != "posterior" and (
         arguments.use_quality
         or arguments.calibration_probabilities is not None
@@ -211,6 +245,11 @@ def _run(arguments: _Arguments) -> int:
     if arguments.calibration_probabilities is None and arguments.alpha != 0.1:
         message = "--alpha requires --calibration-probabilities"
         raise ValueError(message)
+    calibration_scores = (
+        conformal.read_scores(arguments.calibration_scores)
+        if arguments.calibration_scores is not None
+        else None
+    )
     directory = arguments.out
     directory.mkdir(parents=True, exist_ok=True)
     references = References(arguments.refs)
@@ -245,10 +284,16 @@ def _run(arguments: _Arguments) -> int:
             table_path=directory / f"posterior.{label}.tsv",
         )
     predictions_path = directory / f"{label}.csv"
+    minimum_score = (
+        conformal.score_threshold(calibration_scores, arguments.coverage)
+        if calibration_scores is not None
+        else None
+    )
     rows = submission.build_prediction_rows(
         predictions,
         proband_id=arguments.proband_id,
         minimum_relative_score=arguments.min_relative_score,
+        minimum_score=minimum_score,
     )
     with TemporaryDirectory(dir=directory) as temporary_directory:
         temporary = Path(temporary_directory) / predictions_path.name
@@ -257,6 +302,17 @@ def _run(arguments: _Arguments) -> int:
         if validation.errors:
             return _report(validation)
         temporary.replace(predictions_path)
+    if calibration_scores is not None:
+        calibration = {
+            "coverage": float(arguments.coverage),
+            "calibration_cases": len(calibration_scores),
+            "score_threshold": minimum_score,
+            "written_rows": len(rows),
+            "row_limit": submission.MAX_ROWS,
+        }
+        (directory / f"calibration.{label}.json").write_text(
+            json.dumps(calibration, indent=2) + "\n", encoding="utf-8"
+        )
     print(f"{len(rows)} rows written to {predictions_path}")
     return _report(validation)
 

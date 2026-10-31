@@ -9,7 +9,7 @@ disallow_any_explicit = true
 disallow_any_unimported = true
 warn_unreachable = true
 extra_checks = true
-files = ["mvapipe", "benchmark", "tools", "tests"]
+files = ["mvapipe", "benchmark", "tools"]
 
 # Allow imports from scikit-learn and SciPy without type stubs.
 [[tool.mypy.overrides]]

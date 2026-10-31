@@ -1,5 +1,6 @@
 import csv
 import io
+import math
 from collections.abc import Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -66,16 +67,33 @@ def convert_candidates(candidates: Sequence[Candidate]) -> list[Prediction]:
 
 
 def build_prediction_rows(
-    predictions: Sequence[Prediction], *, proband_id: str, minimum_relative_score: float
+    predictions: Sequence[Prediction],
+    *,
+    proband_id: str,
+    minimum_relative_score: float,
+    minimum_score: float | None = None,
 ) -> list[Row]:
     """Build submission rows from predictions supplied in descending score order.
 
     Keep the first prediction and up to MAX_ROWS rows in total. Stop when a later score
-    falls below `minimum_relative_score` times the first score.
+    falls below `minimum_relative_score` times the first score. An absolute
+    `minimum_score` replaces relative filtering and must be finite and nonnegative.
     """
+    if minimum_score is not None and (
+        not math.isfinite(minimum_score) or minimum_score < 0 or minimum_relative_score
+    ):
+        message = "an absolute cutoff must be finite, nonnegative and used alone"
+        raise ValueError(message)
+    threshold = (
+        minimum_score
+        if minimum_score is not None
+        else minimum_relative_score * predictions[0].score
+        if predictions
+        else 0.0
+    )
     rows: list[Row] = []
     for prediction in predictions[:MAX_ROWS]:
-        if rows and prediction.score < minimum_relative_score * predictions[0].score:
+        if rows and prediction.score < threshold:
             break
         row = dict.fromkeys(COLUMNS, "")
         row["proband_id"] = proband_id
@@ -92,6 +110,7 @@ def build_prediction_rows(
 
 
 def write_predictions(rows: Sequence[Row], predictions_path: Path) -> None:
+    """Write Track 1 rows as UTF-8 CSV without a byte-order mark."""
     with predictions_path.open("w", encoding="utf-8", newline="") as predictions:
         writer = csv.DictWriter(predictions, fieldnames=COLUMNS, lineterminator="\n")
         writer.writeheader()
